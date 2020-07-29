@@ -3,7 +3,9 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  // baseUrl: 'https://malcolmcordova.com/libroreal/server/'
+  baseUrl: 'http://localhost:8888/proyectos/servidoresBackend/libroreal/server/'
 };
 
 /*

@@ -1,0 +1,64 @@
+<div class="topevacio"></div>
+
+
+
+
+<section class="">
+    <div class="container">
+        <div class="row uppp">
+            <div class="col-xs-12 col-sm-6" style="padding-top: 40px;">
+                <h1>{{'multimedia.title' | translate }} </h1>
+                <h4>{{'multimedia.text' | translate }}</h4>
+            </div>
+            <div class="col-xs-12 col-sm-6 ">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/oL_wuVpyu4Y" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<div class="container ">
+    <div id="custom-search-input search2">
+        <div class="input-group col-md-12">
+            <input type="search" name="search" #input (keyup)="search(input.value)" class="search-query form-control" placeholder="Encuentre por aqui" aria-describedby="button-addon1" class="form-control border-0 bg-light" />
+            <span class="input-group-btn">
+                <button class="btn btn-danger" type="submit" name="submit" (click)="search(input.value)" class="btn btn-danger" data-toggle="tooltip" title="mostrar todos">
+                    <span class=" fa fa-search"></span>
+            </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<div class="clear"></div> <br><br>
+
+<div class="container">
+    <div class="row multivideo">
+        <div class="col-tn-12 col-xs-12 col-sm-6 col-md-6 fr-view" *ngFor=" let audio of audios.audios | keys | paginate: { itemsPerPage: count, currentPage: p }">
+            <div class="col-xs-4">
+                <a href="#videoModal" class="gallery-box" data-toggle="modal" [attr.data-target]="'#' + audio.id">
+                    <img src="http://img.youtube.com/vi/{{audio.link}}/2.jpg" alt="{{audio.title}}" class="img-responsive img-circle">
+                </a>
+            </div>
+            <div class="col-xs-8">
+                <h4>{{audio.nombre}}</h4>
+            </div>
+        </div>
+        <!--Including the pagination control.-->
+        <div class="container mt-4 mb-4">
+            <div class="text-center">
+                <pagination-controls (pageChange)="p = $event" autoHide="true" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+<div class="clear"></div> <br><br>
+<div class="container">
+
+    <a href="https://www.youtube.com/channel/UCfXadcyT09Gi-R6VZfJciuQ" target="_blank"><button class="botoncomprar uppp col-xs-12 col-sm-4 col-sm-push-4">+ info</button></a>
+
+</div>
+<app-modal></app-modal>

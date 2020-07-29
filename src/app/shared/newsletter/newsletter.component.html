@@ -1,0 +1,31 @@
+<section class="newsletter " style="padding-top: 130px;">
+    <div class="container">
+        <div class="subscr col-xs-12 col-sm-6 col-sm-push-3 col-md-6 col-md-push-3 ">
+            <h3 class="text-center">{{'subscribete.title' | translate}}</h3>
+            <form action="mail-newletter.php" method="post" class="mailNEws hidden-xs">
+                <div class="input-group hidden-xs">
+                    <span class="input-group-addon"><i class="fa fa-envelope"></i></span>
+                    <input type="email" class="form-control" placeholder="{{'email.title' | translate}}" name="email">
+                    <span class="input-group-addon"><i class="fa fa-user"></i></span>
+                    <input type="text" class="form-control" placeholder="{{'nombre.title' | translate}}" name="nombre">
+                </div><br><br>
+                <button type="submit" value="sub" name="subcribir" class="botoncomprar col-xs-12 col-sm-4 col-sm-push-4">{{'subscribirme.title' | translate}}</button>
+            </form>
+
+
+            <form action="mail-newletter.php" method="post" class="mailNEws visible-xs">
+
+                <div class="col-xs-12">
+                    <input type="email" class="form-control" placeholder="{{'email.title' | translate}}" name="email">
+                </div>
+                <div class="col-xs-12">
+                    <input type="text" class="form-control" placeholder="{{'nombre.title' | translate}}" name="nombre">
+                </div>
+                <div class="clear"></div><br><br>
+                <button type="submit" value="sub" name="subcribir" class="botoncomprar col-xs-8 col-xs-push-2 ">{{'subscribirme.title' | translate}}</button>
+            </form>
+
+        </div>
+    </div>
+
+</section>

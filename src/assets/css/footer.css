@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+
+footer {
+    margin-top: 30px;
+    padding: 15px;
+    background-color:#f89e1c;
+}
+
+
+footer ul li a{
+    font-family: 'Jura', sans-serif;
+    color: #fff
+}
+
+footer ul li a:hover{
+    text-decoration: none;
+}
+
+footer i{
+    border-radius: 50%;
+    background-color: #0067b3;
+    width: 44px;
+    height: 44px;
+    margin-right: 5px;
+    
+}
+
+footer h4{
+    color: #fff;
+}
+
+footer .fa{
+    color: #f89e1c;
+    font-size: 23px;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+.credits{
+    background-color: #0067b3;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.credits img{
+    width: 20%;
+    display: block;
+}
+
+.credits p{
+    font-family: 'Jura', sans-serif;
+    color: #fff;
+    font-size: 12px;
+}
+
+ul.logosfoot{
+    display: block
+}
+
+ul.logosfoot li{
+    display: list-item;
+    list-style: none;
+}
+
+li.indiegogofoot{
+    margin-bottom: 20px;
+}
+
+.indiegogofoot img{
+    width: 40%;
+    display: block;
+}
+
+li.funded{}
+
+.funded img{
+     width: 20%;
+    display: block;
+    margin: auto;
+}
+
+
+@media (min-width:480px) and (max-width:768px){
+    footer .fa {
+        font-size: 20px;
+        line-height: 41px;
+    }
+    
+    footer i {
+    width: 37px;
+    height: 37px;
+}
+}

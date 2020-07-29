@@ -1,0 +1,334 @@
+<!---Audio videos-->
+
+<div *ngFor="let audio of audios; let i = index">
+    <div id="{{audio.id}}" class="modal fade videoModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button class="btn btn-primary pull-right " onclick="stopVideo()" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="embed-responsive embed-responsive-16by9 z-depth-1-half">
+                        <iframe class="embed-responsive-item" [src]="getVideoIframe(audio.link)" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!---Condiciones-->
+
+<div id="condiciones" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"> <i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <h2>Condiciones Generales.</h2>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim facere autem aliquam voluptas mollitia tenetur, facilis, itaque reiciendis, cum sint perferendis ipsa quidem? Minima molestiae fugiat, magni repellat voluptate et.Lorem ipsum dolor sit amet,
+                    consectetur adipisicing elit. <br><br> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim facere autem aliquam voluptas mollitia tenetur, facilis, itaque reiciendis, cum sint perferendis ipsa quidem?
+                    Minima molestiae fugiat, magni repellat voluptate et.Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br><br> Ducimus doloribus exercitationem aspernatur mollitia, eaque excepturi, voluptas consectetur quaerat laboriosam
+                    pariatur iste beatae quia nobis omnis, officiis! Atque deserunt nihil, nesciunt!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim facere autem aliquam voluptas mollitia tenetur, facilis, itaque reiciendis, cum sint perferendis
+                    ipsa quidem? Minima molestiae fugiat, magni repellat voluptate et.Lorem ipsum dolor sit amet, consectetur adipisicing elit.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim facere autem aliquam voluptas mollitia tenetur,
+                    facilis, itaque reiciendis, cum sint perferendis ipsa quidem? Minima molestiae fugiat, magni repellat voluptate et.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                </p>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Personal-->
+
+<div id="modalBernado" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"> <i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="assets/personal/bernardo.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4>Bernardo Bernal</h4>
+                    <h5>(Cantaura, 1986)</h5>
+                    <p>Empezó a trabajar como asistente del Libro Real en noviembre del 2016. Es incansable y ha trabajado en revisión de detalles de diseño de páginas, transcripción de piezas, investigación, contacto con compositores, selección de repertorio
+                        y una larga lista de tareas que ha cumplido con el mayor entusiasmo. Bernie toca el cuatro y canta. <br> <br> Es profesor de música egresado en 2009 de la Universidad Pedagógica Experimental Libertador (UPEL), Instituto Pedagógico
+                        de Caracas.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalEloimar" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"> <i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body" style="height: 280px;">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="assets/personal/eloimar.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4>Eloimar Bonilla</h4>
+                    <h5>(Caracas, 1978)</h5>
+                    <p>Es comunicadora social de la UCAB, con habilidades para el desarrollo y coordinación de proyectos y la producción audiovisual y de eventos. Elo participa desde junio de 2017 como asistente de producción para la conclusión del Libro
+                        Real y fue la responsable de muchas de las diligencias necesarias para su publicación.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalfran" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"> <i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body" style="height: 280px;">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="assets/personal/fraciestPoller.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4>Franciest Poller</h4>
+                    <h5>(Caracas, 1982)</h5>
+                    <p>Trabaja en la producción y coordinación del Libro Real desde marzo del 2016, cuando se evidenciaron los montones de trámites y procesos paralelos que serían necesarios para poder publicarlo. Fran es internacionalista egresada de la
+                        UCV y productora gráfica en el diario El Nacional. Es extraordinariamente eficiente y ha llevado este proyecto de ser un amorfo montón de partituras en una computadora hasta su resultado final.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalMaria" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"> <i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body" style="height: 280px;">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="assets/personal/mariaEugeniaArmoni.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4>María Eugenia Hamoni</h4>
+                    <h5>(Caracas, 1992)</h5>
+                    <p> Fue la primera asistente del Libro Real de la Música Tradicional Venezolana desde 2014. Mientras trabajaba para este proyecto, Maru estudió y se graduó de enfermera. Se encargó de buscar repertorio nuevo, investigar sobre autores,
+                        buscar el significado de palabras raras y transcribir música y letras, además de colaborar en un sinfín de tareas. Maru estudió violín en el Conservatorio Juan José Landaeta.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="modalVanesa" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"> <i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body" style="height: 280px;">
+                <div class="col-xs-12 col-sm-6">
+                    <img src="assets/personal/vanessa.jpg" alt="">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                    <h4>Vanessa Tapia</h4>
+                    <h5>(San Fernando de Apure, 1996)</h5>
+                    <p>Se integró al Libro Real en febrero de 2017, mientras se graduaba en Comercio Exterior en la Universidad Simón Bolívar. Inicialmente no tenía experiencia en música y se dedicó a revisar las letras de las canciones; luego aprendió a
+                        usar programas de edición musical y sus aportes en el diseño fueron importantísimos para optimizar la imagen del libro. Es extremadamente meticulosa y posee una habilidad envidiable para la escritura. Vane está aprendiendo a tocar
+                        el saxofón.</p>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Galerias Libro-->
+
+<div id="galleryModal01" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/ellibro/020-LibroReal-MarkBrown_EHA.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="galleryModal02" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/ellibro/estilo.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="galleryModal03" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/ellibro/autor.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal04" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/ellibro/letras.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal05" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/ellibro/partituras.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal06" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="assets/img/ellibro/titulo.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Galerias Mark-->
+
+<div id="galleryModal1" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/03.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="galleryModal2" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/02.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal3" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/01.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal4" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/04.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal5" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/05.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal6" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/06.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal7" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/07.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>
+<div id="galleryModal8" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button class="btn btn-primary pull-right" data-dismiss="modal" aria-hidden="true"><i class="fa fa-times"></i></button>
+            </div>
+            <div class="modal-body">
+                <img src="./assets/img/mark/08.jpg" id="galleryImage" class="img-responsive" />
+            </div>
+        </div>
+    </div>
+</div>

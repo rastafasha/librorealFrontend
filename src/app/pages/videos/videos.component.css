@@ -1,0 +1,29 @@
+.multivideo iframe {
+    width: 100%;
+    height: 120px;
+}
+
+.multivideo img {
+    width: 90px;
+    height: 90px;
+    display: block;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+@media(max-width:480px) {
+    .multivideo iframe {
+        height: 100px;
+    }
+    .multivideo img {
+        width: 1;
+        height: auto;
+    }
+}
+
+@media(max-width:768px) {
+    .multivideo img {
+        width: 45px;
+        height: auto;
+    }
+}

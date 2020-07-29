@@ -1,0 +1,92 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+
+.ed-modal{
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top:0;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    z-index: 9999999999;
+    transition: all 300ms;
+}
+
+.ed-closeModal{
+    position: absolute;
+    top: 1.5em;
+    right: 1.5em;
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: .5;
+    transition: all 300ms
+}
+
+.ed-closeModal::before,
+.ed-closeModal::after{
+    content: "";
+    width: 2.12rem;
+    height: 2px;
+    background: #fff;
+    position: absolute;
+    top: 0;
+    transform: rotate(45deg);
+    transform-origin: top left;
+}
+
+.ed-closeModal::before{
+    left: 0;
+}
+
+.ed-closeModal::after{
+    right: 0;
+    transform: rotate(-45deg);
+    transform-origin: top right;
+}
+
+
+.modalContent{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.video{
+    width: 100%;
+    position: relative;
+    height: 0;
+    padding-bottom: 56.25%;
+    overflow: hidden;
+}
+
+
+.video iframe{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+
+
+.modal {
+    position: fixed;
+    top: 110px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 9999;
+    display: none;
+    overflow: hidden;
+    -webkit-overflow-scrolling: touch;
+    outline: 0;
+}
+
+.modal-header {
+    border-bottom:none
+}

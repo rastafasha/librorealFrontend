@@ -1,0 +1,231 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm C��rdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+#myCarousel2 .list-group-item h4 {
+    font-weight: 300;
+    font-size: 16px;
+}
+
+#myCarousel2 .list-group-item p {
+    font-size: 12px;
+}
+
+#myCarousel2 .carousel-caption {
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: left;
+    padding: 10px;
+    width: 97%;
+    box-sizing: content-box;
+    background: #fff;
+    text-shadow: none;
+    border: 1px solid #ccc;
+}
+
+#myCarousel2 .list-group {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#myCarousel2 .list-group-item {
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+#myCarousel2 .list-group .active {
+    background-color: #eee;
+}
+
+#myCarousel2 .carousel-caption a {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+#myCarousel2 .carousel-caption h4 {
+    font-family: 'Jura', sans-serif;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#myCarousel2 .carousel-caption p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    color: #333;
+    text-decoration: none;
+}
+
+#myCarousel2 .list-group-item {
+    position: relative;
+    display: block;
+    padding: 10px 5px;
+    margin-bottom: -1px;
+    background-color: transparent !important;
+    border: 0;
+    height: 105px;
+    overflow: hidden;
+    box-sizing: content-box;
+    margin-left: 20px;
+    border-bottom: 1px solid #fff;
+}
+
+.modal-header {
+    padding-bottom: 30px;
+    border-bottom: none;
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    #myCarousel2 .carousel-caption {
+        width: 100%;
+        height: 130px;
+    }
+}
+
+@media (min-width: 992px) {
+    #myCarousel2 {
+        padding-right: 33.3333%;
+    }
+    #myCarousel2 .carousel-controls {
+        display: none;
+    }
+}
+
+@media (max-width: 991px) {
+    .carousel-caption p,
+    #myCarousel2 .list-group {
+        display: none;
+    }
+}
+
+.news a p,
+.news p a,
+.news ul li a {
+    color: #fff !important;
+}
+
+.news a p:hover,
+.news p a:hover,
+.news ul li a:hover {
+    text-decoration: underline;
+}
+
+.news img {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 60px;
+}
+
+.news h2.titulo {
+    position: relative;
+    margin-top: -205px;
+    margin-bottom: -20px;
+    margin-left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.news p.intro {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+.noti {
+    height: 550;
+}
+
+.noti img {
+    width: 100%;
+    margin: auto;
+    display: block;
+    margin-bottom: 10px;
+    height: 230px;
+}
+
+.noti h2.titulo {
+    position: relative;
+    margin-top: -205px;
+    margin-bottom: -20px;
+    margin-left: 0px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+.noti p.intro {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+
+
+/*----news new---*/
+
+.noticiahome img {
+    height: 300px;
+}
+
+.imagenoticia {
+    height: 300px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0;
+    overflow: hidden;
+}
+
+.imagenoticia .contenido {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: flex-end;
+    justify-content: flex-start;
+    z-index: 9;
+    height: 100%;
+    width: 100%;
+    padding: 20px;
+    color: #fff;
+}
+
+.imagenoticia ::before {
+    content: '';
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+100;Neutral+Density */
+    background: -moz-linear-gradient(-45deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0) 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
+    position: absolute;
+}
+
+.paciente-desc {
+    margin-top: 40px;
+}
+
+@media(max-width:480px) {
+    .imagenoticia {
+        height: 150px;
+    }
+}

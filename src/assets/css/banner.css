@@ -1,0 +1,214 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+.BannPpal {
+    position: relative;
+    z-index: 2;
+}
+
+.carousel-inner>.item>a>img,
+.carousel-inner>.item>img {
+    display: block;
+    width: 100%;
+    height: 100vh;
+    margin: auto;
+}
+
+.img-responsive,
+.thumbnail a>img,
+.thumbnail>img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.container-fluid {
+    max-width: 1920px;
+}
+
+.bannp {
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.BannPpal1 {
+    background-image: url(../img/banner/01.jpg);
+}
+
+.BannPpal2 {
+    background-image: url(../img/banner/city4.jpg);
+}
+
+.texto {
+    position: absolute;
+    z-index: 2;
+    top: 13px;
+    /* right: 0px; */
+    left: 0%;
+    width: 100%;
+    height: 20px;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+.texintro {
+    position: absolute;
+    z-index: 99999;
+    top: 37%;
+    text-align: center;
+    left: 42%;
+}
+
+.texintro h1 {
+    font-family: 'Open Sans', sans-serif;
+    text-transform: none;
+    color: black;
+    font-weight: 700;
+    /*text-shadow: 0px 0px 1px #000;*/
+}
+
+.texintro h4 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: #000;
+    /*text-shadow: 0px 0px 1px #000;*/
+}
+
+.carousel {
+    margin-top: 40px;
+}
+
+@media(max-width:480px) {
+    .carousel-inner {
+        height: auto;
+    }
+    .carousel {
+        position: relative;
+        margin-top: 50px;
+    }
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+        height: auto;
+    }
+}
+
+@media(max-width:768px) {
+    .bannp {
+        background-repeat: no-repeat;
+        background-position: 50% 0;
+        background-size: cover;
+        background-attachment: scroll;
+    }
+    .carousel-inner {
+        height: auto;
+    }
+    .texintro {
+        top: 37%;
+        text-align: center;
+        left: 20%;
+    }
+    .item,
+    .carousel .active {
+        margin-top: 46px;
+    }
+    .carousel {
+        margin-top: 0px;
+    }
+    section {
+        padding: 0;
+    }
+}
+
+.carousel-fade .item,
+.active.left,
+.active.right {
+    padding-top: 0px;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+
+/* Background images are set within the HTML using inline CSS, not here */
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+.slide .carousel-indicators li {
+    color: #f89e1c;
+}
+
+.slide .carousel-indicators {
+    bottom: 20px;
+    border-color: var(--naranja) !important;
+}
+
+.slide ol li {
+    border-color: #f89e1c;
+}
+
+.slide .carousel-indicators .active {
+    background-color: #0067b3;
+}
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+
+.carousel-fade .item,
+.active.left,
+.active.right {
+    opacity: 0.3;
+}
+
+.carousel-fade .active,
+.next.left,
+.prev.right {
+    opacity: 1;
+}
+
+.carousel-fade .next,
+.prev,
+.active.left,
+.active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-control {
+    z-index: 2;
+}
+
+@media (max-width:480px) {
+    .slide .carousel-indicators {
+        bottom: 0px;
+    }
+}
+
+@media (min-width:480px) and (max-width:680px) and (orientation:landscape) {
+    .carousel-inner>.item>a>img,
+    .carousel-inner>.item>img,
+    .img-responsive,
+    .thumbnail a>img,
+    .thumbnail>img {
+        height: auto;
+    }
+}

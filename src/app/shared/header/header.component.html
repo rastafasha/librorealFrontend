@@ -1,0 +1,81 @@
+<nav id="topNav" class="navbar navbar-default navbar-fixed-top">
+    <div class="top-nav">
+        <div class="container">
+            <ul class="nav navbar-nav navbar-right">
+
+                <li class="shopping visible-xs"><a routerLink="comprar-libros-en-linea"><i class="fa fa-shopping-cart"></i></a></li>
+                <li class="shopping visible-xs" style="margin-right:10px"><a href="https://www.patreon.com/LibroReal" target="_blank"><i class="fa fa-life-ring"></i></a></li>
+                <li class="shopping visible-xs" style="margin-right:10px"><a href="http://facebook.com/fundacionlibroreal/" target="_blank"><i class="fa fa-facebook-official"></i></a></li>
+
+                <li class="shopping hidden-xs" style="margin-right:20px"><a routerLink="comprar-libros-en-linea">{{ 'Comprar Libros en Línea' | translate }} <i class="fa fa-shopping-cart"></i></a></li>
+                <li class="shopping hidden-xs" style="margin-right:20px"><a href="https://www.patreon.com/LibroReal" target="_blank">{{ 'Cómo Ayudar?' | translate }} <i class="fa fa-life-ring"></i> </a></li>
+                <li class="shopping hidden-xs" style="margin-right:20px"><a href="http://facebook.com/fundacionlibroreal/" target="_blank">{{ 'Fundación LR' | translate }} <i class="fa fa-facebook-official"></i></a></li>
+
+            </ul>
+        </div>
+    </div>
+
+    <div class="clear"></div>
+
+    <div class="container">
+
+        <div class="navbar-header ">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand " routerLink="/home">
+                <div class="logo"></div>
+            </a>
+        </div>
+
+
+        <div class="navbar-collapse collapse " id="bs-navbar">
+            <ul class="nav navbar-nav navbar-right">
+                <li><a routerLink="home" routerLinkActive="active">{{ 'Inicio' | translate }}</a></li>
+                <li><a routerLink="el-libro-real" routerLinkActive="active">{{ 'El Libro Real' | translate }}</a></li>
+                <li><a routerLink="mark-brown" routerLinkActive="active">Mark Brown</a></li>
+                <li><a routerLink="clases-de-musica" routerLinkActive="active">{{ 'Clases' | translate }}</a></li>
+                <li><a routerLink="letras" routerLinkActive="active">{{ 'Letras' | translate }}</a></li>
+                <li><a routerLink="noticias" routerLinkActive="active">{{ 'Noticias' | translate }}</a></li>
+                <!--li><a href="mapa-musical" >Mapa</a></li-->
+                <li><a routerLink="audio" routerLinkActive="active"><i class="fa fa-youtube-play" style="color:red"></i> {{ 'Audio' | translate }}</a></li>
+                <!--li><a href="#search" class="search"><i class="fa fa-search"></i></a></li-->
+
+                <li><a *ngIf="flag" style="cursor: pointer;" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Esp</a></li>
+                <li><a *ngIf="!flag" style="cursor: pointer;" [ngClass]="{'!active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Eng</a></li>
+
+            </ul>
+
+        </div>
+        <div id="top" class="">
+            <div class="grupo container">
+                <div class="caja col-xs-10 nopadd">
+                    <div id="mostrar-menu"><i class="fa fa-bars"></i></div>
+                    <a routerLink="/home">
+                        <div class="logo logob"></div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <nav id="menu-principal">
+
+            <ul class="menu menu-principal visible-xs visible-sm">
+                <li><a routerLink="home" routerLinkActive="active">{{ 'Inicio' | translate }}</a></li>
+                <li><a routerLink="el-libro-real" routerLinkActive="active">{{ 'El Libro Real' | translate }}</a></li>
+                <li><a routerLink="mark-brown" routerLinkActive="active">Mark Brown</a></li>
+                <li><a routerLink="clases-de-musica" routerLinkActive="active">{{ 'Clases' | translate }}</a></li>
+                <li><a routerLink="letras" routerLinkActive="active">{{ 'Letras' | translate }}</a></li>
+                <li><a routerLink="noticias" routerLinkActive="active">{{ 'Noticias' | translate }}</a></li>
+                <!--li><a href="mapa-musical" >Mapa</a></li-->
+                <li><a routerLink="audio" routerLinkActive="active"><i class="fa fa-youtube-play" style="color:red"></i> {{ 'Audio' | translate }}</a></li>
+                <!--li><a href="#search" class="search"><i class="fa fa-search"></i></a></li-->
+                <li><a *ngIf="flag" style="cursor: pointer;" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')">Esp</a></li>
+                <li><a *ngIf="!flag" style="cursor: pointer;" [ngClass]="{'!active': activeLang == 'en'}" (click)="cambiarLenguaje('en')">Eng</a></li>
+
+            </ul>
+        </nav>
+    </div>
+</nav>

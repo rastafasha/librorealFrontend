@@ -1,0 +1,146 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+
+/*----topes---*/
+
+.topes {
+    height: 40vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 0px;
+}
+
+.topes::after {
+    content: '';
+    width: 100%;
+    height: initial;
+    /*background: rgba(0,0,0,0.5);*/
+    z-index: 10;
+    position: absolute;
+    height: inherit;
+    left: 0px;
+    top: 0px;
+}
+
+.topes h2 {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 100;
+    font-size: 50px;
+    color: #333;
+    text-align: center;
+    top: 200px;
+    z-index: 20;
+    position: relative;
+    text-transform: uppercase;
+    text-shadow: 0px 0px 1px #fff;
+}
+
+.topes p {
+    font-family: 'Lato', sans-serif !important;
+    font-weight: 100;
+    font-size: 18px;
+    color: #333;
+    text-align: center;
+    top: 200px;
+    z-index: 20;
+    position: relative;
+}
+
+.topevacio {
+    height: 25vh;
+}
+
+#mark {
+    background-image: url(../img/topes/mark.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#libro {
+    background-image: url(../img/topes/ellibro.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#registro {
+    background-image: url(../img/topes/registro.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#contacto {
+    background-image: url(../img/topes/ellibro.jpg);
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.call-to-action {
+    background: center bottom/cover no-repeat fixed;
+}
+
+.call-to-action2 {
+    background: center center/cover no-repeat fixed;
+}
+
+@media (max-width:480px) {
+    .topevacio {
+        height: 10vh;
+    }
+}
+
+@media (min-width:481px) and (max-width: 768px) {
+    .call-to-action {
+        background: center bottom/cover no-repeat scroll;
+    }
+    .topes .logotop1 {
+        background-position: left;
+        height: 90px;
+        top: 80px;
+    }
+    .topes h2 {
+        font-size: 40px;
+        top: 100px;
+        padding-left: 40px;
+    }
+    .topes {
+        height: 250px;
+    }
+    .topes .logotop {
+        height: 90px;
+    }
+    .topevacio {
+        height: 120px;
+    }
+}
+
+@media(min-width: 768px) and (max-width: 990px) {
+    .topes h2 {
+        font-size: 60px;
+        padding-top: 80px;
+    }
+    .topevacio {
+        height: 35vh;
+    }
+}
+
+@media(min-width: 990px) and (max-width: 1200px) {
+    .topes h2 {
+        font-size: 60px;
+        padding-top: 80px;
+    }
+    .topevacio {
+        height: 35vh;
+    }
+}

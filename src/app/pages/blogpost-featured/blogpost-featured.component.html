@@ -1,0 +1,15 @@
+<section class="featured-blog mtb-40">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4" *ngFor="let noticia of noticias">
+                <div class="blog-box">
+                    <img src="{{noticia.image}}" alt="blog1" />
+                    <h3>{{noticia.titulo}}</h3>
+                    <p>by <span>{{noticia.author}}</span> on <span>{{noticia.created_at | date:'mediumDate'}}</span></p>
+                    <p>{{noticia.intro}}</p>
+                    <a [routerLink]="['/noticia', noticia.id]" class="btn btn-danger">Read more...</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

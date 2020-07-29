@@ -1,0 +1,46 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+.mask::before {
+    content: "";
+    background-color: #f89e1c;
+    padding: 20px;
+    position: absolute;
+    top: 0;
+    left: 110%;
+    height: 100%;
+    animation-name: mask_before;
+    
+    -webkit-animation:mask_before 2s 1 ease-out;
+			-moz-animation:mask_before 2s  1 ease-out;
+			-o-animation:mask_before 2s 1 ease-out;
+			-ms-animation:mask_before 2s 1 ease-out;
+			animation:mask_before 2s 1 ease-out;
+
+}
+
+@-ms-keyframes mask_before {
+	0%   {width: 100%; transform: translateX(-110%);}
+    50%   {width: 100%; transform: translateX(50%);}
+	100% {width: 100%; transform: translateX(120%)}
+}
+
+@-o-keyframes mask_before {
+	0%   {width: 100%; transform: translateX(-110%);}
+    50%   {width: 100%; transform: translateX(50%);}
+	100% {width: 100%; transform: translateX(120%)}
+}
+
+@-moz-keyframes mask_before {
+	0%   {width: 100%; transform: translateX(-110%);}
+    50%   {width: 100%; transform: translateX(50%);}
+	100% {width: 100%; transform: translateX(120%)}
+}
+
+@-webkit-keyframes mask_before {
+	0%   {width: 100%; transform: translateX(-110%);}
+    50%   {width: 100%; transform: translateX(50%);}
+	100% {width: 100%; transform: translateX(120%)}
+}
+

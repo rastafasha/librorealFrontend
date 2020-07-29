@@ -1,0 +1,242 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+
+/*---- cursos---*/
+
+.algunasareas {
+    background-image: url(../img/topes/registro.jpg);
+    height: 40vh;
+    min-height: 30vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 0px;
+    padding: 40px 0px;
+}
+
+.algunasareas h3 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 100;
+    float: left;
+    color: #000;
+}
+
+.imgsvg {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.nav-tabs .imgsvg {
+    display: block;
+    width: 25px;
+    height: 25px;
+    margin: auto;
+    margin-bottom: 10px;
+}
+
+.nav-tabs {
+    border-bottom: none;
+}
+
+.botoneratabs {
+    width: inherit;
+}
+
+
+}
+.botonmd {
+    width: 130px;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .11), 0 5px 15px 0 rgba(0, 0, 0, .08);
+}
+.botones button {
+    background-color: #fff;
+    margin: 15px;
+    width: 10%;
+    border: 1px solid #ccc;
+    font-weight: normal;
+    transition: all .3s;
+}
+.botones button:hover {
+    background-color: #999;
+    margin: 15px;
+    width: 10%;
+    font-weight: normal;
+}
+.botones button a {
+    color: #000;
+}
+.botones ul {
+    display: block;
+    position: relative;
+    bottom: 0;
+    font-weight: 300;
+}
+.botones ul li a {
+    display: list-item;
+    color: #fff;
+    font-size: 20px;
+    list-style: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    padding-right: 15px;
+}
+.botones ul li a:hover {
+    background-color: rgba(0, 0, 0, .3);
+    position: relative;
+    width: 100%;
+}
+.curso {
+    height: 100vh;
+    background-image: url(../img/);
+}
+.curso h5 {
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+.curso i {
+    font-size: 40px;
+    display: block;
+    height: 120px;
+    position: relative;
+    padding: 20px;
+    text-align: center;
+}
+.curso {
+    background-image: url(../img/clases01.jpg);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    margin-bottom: 0px;
+    padding-top: 40px;
+    /*-webkit-filter: grayscale(1);
+    filter: grayscale(1);*/
+
+    margin-bottom: 5px;
+}
+.curso h3 {
+    font-size: 30px;
+    position: absolute;
+    z-index: 999999;
+    line-height: 30px;
+    font-weight: 100;
+}
+.curso::after {
+    content: '';
+    width: 100%;
+    height: auto;
+    background: rgba(0, 86, 150, 0);
+    z-index: 10;
+    position: absolute;
+    height: inherit;
+    left: 0px;
+    top: 0px;
+}
+.cursoname {
+    position: absolute;
+    z-index: 999999;
+    line-height: 30px;
+    font-weight: 100;
+    background-color: #fafafa;
+    color: #000;
+    padding: 30px;
+    top: 5%;
+}
+.cursoname h5 {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.cursoname p {
+    font-weight: normal;
+}
+#cursone {
+    background-image: url(../img/clases02.jpg);
+}
+#curstwo {
+    background-image: url(../img/clases03.jpg);
+}
+#curtre {
+    background-image: url(../img/clases04.jpg);
+}
+
+/*----botonera flotante---*/
+.cursosbotonesaereos {
+    position: static;
+    z-index: 99999999;
+    background-color: transparent;
+}
+.cursosbotonesaereos button {
+    font-weight: normal;
+    transition: all .3s;
+    background-color: #f89e1c;
+    font-family: 'Jura', sans-serif;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 10px 20px;
+    display: block;
+    width: 21.5%;
+    text-align: center;
+    text-transform: uppercase;
+    transition: all .3s;
+}
+.cursosbotonesaereos button:hover {
+    background-color: rgba(250, 250, 250, .5);
+    border: 1px solid #ccc;
+    font-weight: normal;
+    transition: all .3s;
+    padding: 10px;
+    width: 21.5%;
+}
+.formlateral {
+    opacity: 1 !important;
+}
+.titulobloc {
+    background-color: rgba(0, 0, 0, .5);
+    color: #fff;
+    font-family: 'HelveticaNeueLTStd-Roman';
+    font-size: 16px;
+    padding: 10px;
+    position: fixed;
+    top: auto;
+    bottom: 0;
+    left: 5%;
+    width: 90%;
+    height: 100px;
+    z-index: 9999999999;
+    text-align: center;
+    opacity: 1 !important;
+}
+.titulobloc:hover {
+    cursor: pointer;
+}
+.lightbox {
+    opacity: 0.5;
+    -webkit-animation: lightbox-animacion 1s 1 ease-out;
+    -moz-animation: lightbox-animacion 1s 1 ease-out;
+    -o-animation: lightbox-animacion 1s 1 ease-out;
+    -ms-animation: lightbox-animacion 1s 1 ease-out;
+    animation: lightbox-animacion 1s 1 ease-out;
+}
+@media (min-width:480px) and (max-width:680px) and (orientation:landscape) {
+    .botoneratabs {
+        top: 80px;
+        position: relative;
+    }
+
+    .algunasareas {
+        height: auto;
+        min-height: 30vh;
+        padding: 10px 0px;
+    }
+}

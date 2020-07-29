@@ -1,0 +1,49 @@
+<div class="topevacio">
+</div>
+
+<div class="container ">
+    <div id="custom-search-input search2">
+        <div class="input-group col-md-12">
+            <input type="search" name="search" #input (keyup)="search(input.value)" class="search-query form-control" [placeholder]=" 'Encuentre por aqui' | translate " aria-describedby="button-addon1" class="form-control border-0 bg-light" />
+            <span class="input-group-btn">
+            <button class="btn btn-danger" type="submit" name="submit" (click)="search(input.value)" class="btn btn-danger" data-toggle="tooltip" title="mostrar todos">
+                <span class=" fa fa-search"></span>
+            </button>
+            </span>
+        </div>
+    </div>
+</div>
+
+<section class="conctact">
+    <div class="container ">
+
+        <main id="main">
+            <div class="grupo caja row">
+                <div class="grupo cancion col-xs-12 col-sm-6  fr-view" *ngFor=" let letra of letra.letra | keys | paginate: { itemsPerPage: count, currentPage: p }">
+                    <div class="col-sm-1">
+                        <img src="assets/img/pdf-icon.png" alt="El Libro real de la música venezolana | {{letra.titulo}}">
+                    </div>
+                    <div class="caja col-xs-10 col-sm-10">
+                        <h3 class="cancion__titulo" style="margin-left: 10px;"> Titulo: {{letra.titulo}}
+                        </h3>
+                        <p style="margin-left: 10px;"> Nombre del Archivo: {{letra.archivo}}
+                        </p>
+                    </div>
+                    <div class="caja col-xs-1 col-sm-1">
+                        <div class="cancion__opciones">
+                            <a href="{{letra.archivo}}" target="_blank"><i class="fa fa-download" aria-hidden="true"></i></a>
+                            <a href="{{letra.archivo}}" target="_blank"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="clear"></div> <br>
+        <!--Including the pagination control.-->
+        <div class="container mt-4 mb-4">
+            <div class="text-center">
+                <pagination-controls (pageChange)="p = $event" autoHide="true" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+            </div>
+        </div>
+    </div>
+</section>

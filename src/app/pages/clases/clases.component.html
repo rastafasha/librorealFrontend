@@ -1,0 +1,112 @@
+<div class="topevacio">
+</div>
+
+<section class="conctact">
+    <div class="container ">
+        <div class="row uppp" style="margin-top:-20px;">
+            <div class="col-xs-12 col-sm-6">
+                <h2>{{'quieres.titulo' | translate}} </h2>
+                <h3>{{'quieres1.text' | translate}}</h3>
+                <p>{{'quieres2.text' | translate}}</p>
+            </div>
+            <div class="col-xs-12 col-sm-6 " style="margin-top:40px;">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/oL_wuVpyu4Y" frameborder="0" allowfullscreen></iframe>
+            </div>
+
+        </div>
+        <br><br>
+
+    </div>
+</section>
+
+
+<div class="algunasareas ">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-push-1  col-md-7 col-md-push-2 col-lg-6 col-lg-push-3">
+                <h3>{{'algunas' | translate}}</h3>
+                <div class="row">
+                    <ul class="nav nav-tabs botoneratabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#curcero" class="botoncomprar botonmd" aria-controls="home" role="tab" data-toggle="tab">
+                                <img src="assets/svg/musical-notes-symbols.svg" class="imgsvg" alt=""> <span class="hidden-xs hidden-sm">{{'estilos' | translate}}</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#cursone" class="botoncomprar botonmd" aria-controls="cursone" role="tab" data-toggle="tab">
+                                <img src="assets/svg/musical-disc-and-dj-hand.svg" class="imgsvg" alt=""> <span class="hidden-xs hidden-sm">{{'edicion' | translate}}</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#curstwo" class="botoncomprar botonmd" aria-controls="curstwo" role="tab" data-toggle="tab">
+                                <img src="assets/svg/headphones-with-music-note.svg" class="imgsvg" alt=""> <span class="hidden-xs hidden-sm">{{'improvisacion' | translate }}</span>
+                            </a>
+                        </li>
+                        <li role="presentation">
+                            <a href="#curtre" class="botoncomprar botonmd" aria-controls="curtre" role="tab" data-toggle="tab">
+                                <img src="assets/svg/guitar.svg" class="imgsvg" alt=""> <span class="hidden-xs hidden-sm">{{'instrumentos' | translate}}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    .
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel " class="tab-pane active curso" id="curcero">
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2 cursoname">
+                    <img src="assets/svg/musical-notes-symbols.svg" class="imgsvg" alt="">
+                    <h5>{{'entendimiento.titulo' | translate}}</h5>
+                    <hr>
+                    <p>{{'entendimiento.text' | translate}}</p>
+                    <a routerLink="/pre-inscripcion"><button class="botoncomprar col-xs-12 col-sm-4 col-sm-push-4">{{'preinscribirme' | translate}}</button></a>
+                </div>
+
+            </div>
+
+            <div role="tabpanel " class="tab-pane curso" id="cursone">
+
+                <div class="col-xs-12 col-sm-8 col-sm-push-2 cursoname ">
+                    <img src="assets/svg/musical-disc-and-dj-hand.svg" class="imgsvg" alt="">
+                    <h5>{{'usoprofesional.titulo' | translate}}</h5>
+                    <hr>
+                    <p>{{'usoprofesional.text' | translate}}</p>
+                    <a routerLink="/pre-inscripcion"><button class="botoncomprar col-xs-12 col-sm-4 col-sm-push-4">{{'preinscribirme' | translate}}</button></a>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane curso" id="curstwo">
+                <div class="col-xs-12 col-sm-8 col-sm-push-2 cursoname">
+                    <img src="assets/svg/headphones-with-music-note.svg" class="imgsvg" alt="">
+                    <h5>{{'teoria.titulo' | translate}}</h5>
+                    <hr>
+                    <p>{{'teoria.text' | translate}}</p>
+                    <a routerLink="/pre-inscripcion"><button class="botoncomprar col-xs-12 col-sm-4 col-sm-push-4">{{'preinscribirme' | translate}}</button></a>
+
+
+                </div>
+            </div>
+
+
+            <div role="tabpanel " class="tab-pane curso" id="curtre">
+                <div class="col-xs-12 col-sm-8 col-sm-push-2 cursoname">
+                    <img src="assets/svg/guitar.svg" class="imgsvg" alt="">
+                    <h5>{{'saxofon.titulo' | translate}}</h5>
+                    <hr>
+                    <p>{{'saxofon.text' | translate}}</p>
+                    <a routerLink="/pre-inscripcion"><button class="botoncomprar col-xs-12 col-sm-4 col-sm-push-4">{{'preinscribirme' | translate}}</button></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<app-newsletter></app-newsletter>

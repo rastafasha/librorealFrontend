@@ -1,0 +1,101 @@
+<div class="topevacio"></div>
+
+<div class="container main">
+
+
+    <div class="PedidoContainer">
+        <h1>- Ingrese sus Datos -</h1>
+        <form name="MiCompra" action="mailpreisncrp.php" method="post">
+            <div style="margin-bottom:20px;" class="col-xs-12 col-sm-8 col-sm-push-2">
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
+                    <input type="text" name="Nombre" maxlength="114" size="50" class="cuadroInput" placeholder="Nombre">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
+                    <input type="text" name="apellido" maxlength="114" size="50" class="cuadroInput" placeholder="Apellido">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
+                    <input type="text" name="Company" maxlength="114" size="50" class="cuadroInput" placeholder="Empresa( opcional)">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
+                    <input type="text" name="Email" maxlength="114" size="50" class="cuadroInput" placeholder="Email">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
+                    <input type="text" name="CellPhone" maxlength="114" size="50" class="cuadroInput" placeholder="Telefono Movil">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
+                    <input type="text" name="phoneOfc" maxlength="114" size="50" class="cuadroInput" placeholder="Telefono local">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-6">
+                    <input type="text" name="Pais" class="cuadroInput" placeholder="Pais">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-6 col-md-6">
+                    <input type="text" name="Ciudad" class="cuadroInput" placeholder="Ciudad">
+                </div>
+                <div class="camp camp2 col-xs-12 col-sm-12 col-md-12">
+                    <textarea name="coments" class="cuadroInput" style="height: 70px;" placeholder="Comentarios y/o Preguntas"></textarea>
+                </div>
+                <div class="clear"></div>
+                <br>
+                <hr>
+                <br>
+                <div class="camp col-xs-12 ">
+                    Desea recibir información adicional y noticias?<br>
+                    <label class="radio-inline">
+                                  <input type="radio" name="deseo" id="inlineRadio1" value="si"> Si
+                                </label>
+                    <label class="radio-inline">
+                                  <input type="radio" name="deseo" id="inlineRadio2" value="no"> No
+                                </label>
+
+                </div>
+
+            </div>
+
+
+            <div class="clear"></div>
+            <br>
+            <div class="centradobord">
+                <h1>Seleccione la clase que desea aprender</h1>
+            </div>
+
+
+            <div class="col-xs-12 col-sm-8 col-sm-push-2">
+                <div class="CursosList  col-xs-12 col-sm-6 col-md-6">
+                    <div>
+                        <input type="checkbox" name="cursodeseado" value="Entendimiento y ejecución de la música venezolana clases" style="margin-right:10px"> Entendimiento y ejecución de la música venezolana clases
+                    </div><br>
+                    <div>
+                        <input type="checkbox" name="cursodeseado" value="Uso profesional de la aplicación FINALE para editar música escrita" style="margin-right:10px"> Uso profesional de la aplicación FINALE para editar música escrita
+                    </div><br>
+                    <div>
+                        <input type="checkbox" name="cursodeseado" value="Teoría musical para improvisación" style="margin-right:10px"> Teoría musical para improvisación
+                    </div>
+
+
+
+                </div>
+
+                <div class="CursosList col-xs-12 col-sm-6 col-md-6">
+                    <div>
+                        <input type="checkbox" name="cursodeseado" value="Contrabajo y bajo guitarra" style="margin-right:10px"> Contrabajo y bajo guitarra
+                    </div><br>
+                    <div>
+                        <input type="checkbox" name="cursodeseado" value="Saxofón" style="margin-right:10px"> Saxofón
+                    </div><br>
+                    <div>
+                        <input type="checkbox" name="cursodeseado" value="Piano" style="margin-right:10px"> Cuatro para principiantes
+                    </div>
+
+                </div>
+            </div>
+            <div class="clear"></div>
+
+            <div class="col-xs-10 col-md-8 col-md-offset-2" style="margin-top:40px">
+                <input type="reset" name="" value="Cancelar" class="botoncomprar col-xs-12 col-xs-offset-1 col-md-4 ">
+                <input type="submit" name="SolicitarPres" value="Solicitar" class="botoncomprar col-xs-12 col-xs-offset-1 col-md-4">
+            </div>
+        </form>
+
+    </div>
+
+</div>

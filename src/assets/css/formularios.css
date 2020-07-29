@@ -1,0 +1,139 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.ContactoContainer{
+	float:left; 
+	font-size:16px; 
+	text-align:left; 
+	color:#999;
+	font-family: 'HelveticaNeueLTPro-Th';
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ContactoContainer .camp{
+    float:left; 
+    margin-bottom:15px;
+}
+.ContactoContainer .camp2{
+    width: 100%;
+    float:left; 
+    margin-bottom:15px;
+}
+.ContactoContainer textarea{
+    width:100%; 
+    height:100px;
+    margin-top:10px;
+}
+
+@media (max-width : 768px) {
+    .ContactoContainer .camp{
+    width: 100%;
+    float:left; 
+    margin-bottom:15px;
+}
+    
+}
+	
+ 
+
+	
+
+.cuadroInput{
+    width:100%; 
+    margin-top:20px;
+	border : #c3c3c3 solid 1px;
+	background-color: #f2f2f2;
+	height: 40px;
+	font-size: 14px;
+	text-indent: 5px;
+	color:#000;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+
+
+
+.sarch {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.sarch button {
+   background-color: #234090;
+    color: #fff;
+    height: 34px;
+}
+.sarch button:hover {
+   background-color: #fff;
+    color:#234090;
+    border: 1px solid #234090;
+}
+
+
+
+.icon_cont {
+    width: 80px;
+    min-height: 90px;
+    height: auto;
+    float: left;
+}
+
+
+
+.newsletter {
+    background-image: url(../img/topes/registro.jpg);
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: auto;
+    margin-top: 30px;
+    /* height: 60vh; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    position: relative;
+    margin-bottom: -30px;
+}
+.newsletter::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    z-index: 10;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.newsletter .subscr {
+    color: #fff;
+    margin-bottom: 20px;
+    text-shadow: 0px 0px 2px #000;
+   font-family: 'Lato', sans-serif !important;
+    font-weight: 100;
+    text-align: center;
+    z-index: 20;
+    position: relative;
+}
+
+.newsletter .subscr h3{
+    color: #fff;
+    text-transform: uppercase;
+}
+}
+

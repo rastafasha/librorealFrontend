@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm cordova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+body{
+	-webkit-animation:body-animacion 1s 1 ease;
+			-moz-animation:body-animacion 1s 1 ease;
+			-o-animation:body-animacion 1s 1 ease;
+			-ms-animation:body-animacion 1s 1 ease;
+			animation:body-animacion 1s 1 ease;
+
+}
+
+@-ms-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-o-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-moz-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+@-webkit-keyframes body-animacion {
+	0%   {opacity:0;}
+	100% {opacity:1;}
+}
+
+
+
+
+
+.Up {
+    -webkit-animation:Up-animacion 1s 1 ;
+			-moz-animation:Up-animacion 1s 1 ;
+			-o-animation:Up-animacion 1s 1 ;
+			-ms-animation:Up-animacion 1s 1 ;
+			animation:Up-animacion 1s 1 ;
+			-webkit-animation-name: fadeInUp;
+            animation-name: fadeInUp;  
+}
+
+.Leftt {
+    -webkit-animation:Leftt-animacion 4s 1 ;
+			-moz-animation:Leftt-animacion 4s 1 ;
+			-o-animation:Leftt-animacion 4s 1 ;
+			-ms-animation:Leftt-animacion 4s 1 ;
+			animation:Leftt-animacion 4s 1 ;
+			-webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;  
+}
+
+.Leftt2 {
+    -webkit-animation:Leftt2-animacion 5s 1 ;
+			-moz-animation:Leftt2-animacion 5s 1 ;
+			-o-animation:Leftt2-animacion 5s 1 ;
+			-ms-animation:Leftt2-animacion 5s 1 ;
+			animation:Leftt2-animacion 5s 1 ;
+			-webkit-animation-name: fadeInRight;
+            animation-name: fadeInRight;  
+}
+
+.doun {
+    -webkit-animation:doun-animacion 3s 1 ;
+			-moz-animation:doun-animacion 3s 1 ;
+			-o-animation:doun-animacion 3s 1 ;
+			-ms-animation:doun-animacion 3s 1 ;
+			animation:doun-animacion 3s 1 ;
+			-webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;  
+}
+
+/*.menu {
+    -webkit-animation:menu-animacion 3s 1 ;
+			-moz-animation:menu-animacion 3s 1 ;
+			-o-animation:menu-animacion 3s 1 ;
+			-ms-animation:menu-animacion 3s 1 ;
+			animation:menu-animacion 3s 1 ;
+			-webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;  
+}*/
+
+
+.social {
+    -webkit-animation:social-animacion 3s 1 ;
+			-moz-animation:social-animacion 3s 1 ;
+			-o-animation:social-animacion 3s 1 ;
+			-ms-animation:social-animacion 3s 1 ;
+			animation:social-animacion 3s 1 ;
+			-webkit-animation-name: fadeInDown;
+            animation-name: fadeInDown;  
+}
+

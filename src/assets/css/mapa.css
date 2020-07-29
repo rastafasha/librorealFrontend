@@ -1,0 +1,97 @@
+@charset "UTF-8";
+/* CSS Document */
+/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+.mapa{
+    background-color: rgba(0,0,0,1)
+}
+
+
+.busc{
+    background:rgba(250,250,250,0.5);
+    height:530px; 
+    padding-top:30px
+}
+.resultado{
+    background:rgba(250,250,250,.3);
+    height:530px;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.resultado .inforesult{
+    border-bottom: 1px solid #000;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.resultado h4, .resultado p{
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.resultado .inforesult img{
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.resultado .inforesult {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.scrolling{
+    height: 500;
+    overflow: scroll;
+    
+}
+
+
+
+
+
+
+
+.resultado{
+    height: 390px;
+    position: fixed;
+    background-color: rgba(250,250,250,0.9);
+    z-index: 99999;
+    float: left;
+    left: calc(100.5%);
+    top: 215px;
+    padding: 20px;
+    opacity: 1 !important;
+    border-radius: 4px !important;
+    -o-border-radius: 4px !important;
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    -ms-border-radius: 4px !important;
+    -moz-box-shadow: -4px 3px 14px #333333;
+-webkit-box-shadow: -4px 3px 14px #333333;
+box-shadow: -4px 3px 14px #333333;
+}
+
+.titulomapa{
+    background-color: #006837;
+    color: #fff;
+    font-family: 'HelveticaNeueLTStd-Roman';
+    font-size: 16px;
+    padding: 10px;
+    transform: rotate(-90deg);
+    position: relative;
+    top: 90px;
+    left: -175px;
+    width: 260px;
+    height: 50px;
+    clear: both;
+    text-align: center;
+    opacity: 1 !important;
+}
+.titulobloc:hover{
+    cursor: pointer;
+}
+

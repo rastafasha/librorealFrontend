@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="right-widget recent-post desktop">
+        <div *ngFor="let noticia of noticias | slice:0:4 " class="mt-1 ">
+            <a [routerLink]="['/noticia', noticia.id]">
+                <div class="rb-box">
+                    <div class="rb-box-img">
+                        <img src="{{noticia.image}}" alt="{{noticia.titulo}}" />
+                    </div>
+                    <div class="rb-box-desc">
+                        <h6>{{noticia.titulo}}</h6>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+    </div>
+    <div class="right-widget recent-post movil">
+        <div *ngFor="let noticia of noticias | slice:0:4 " class="mt-1 hidden-xs">
+            <a href="noticia/{{noticia.id}}" target="_self">
+                <div class="rb-box">
+                    <div class="rb-box-img">
+                        <img src="{{noticia.image}}" alt="{{noticia.title}}" />
+                    </div>
+                    <div class="rb-box-desc">
+                        <h6>{{noticia.title}}</h6>
+                    </div>
+                </div>
+            </a>
+            <hr>
+        </div>
+    </div>
+</div>

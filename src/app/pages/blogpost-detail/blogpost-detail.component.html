@@ -1,0 +1,67 @@
+<div class="topevacio"></div>
+<div class="">
+    <div class="container ">
+        <div class="col-sm-8 news">
+            <div class="row">
+                <div *ngIf="noticia$ | async as noticia else loading">
+                    <div class="col-xs-12  uppp">
+                        <img src="{{noticia.image}}" class="shadow" alt="{{noticia.titulo}} libro real venezuela" />
+                        <div class="clear"></div> <br><br>
+                        <h2 class="titulo">{{noticia.titulo}}</h2>
+                        <div class="clear"></div> <br><br>
+                        <div class="paciente-desc" [innerHTML]="noticia.intro"></div>
+                    </div>
+                    <div class="col-xs-12 uppp">
+                        <div class="paciente-desc" [innerHTML]="noticia.parrafos"></div>
+                    </div>
+
+                    <div class="clear"></div>
+
+                    <div class="comparte uppp">
+                        <p>Comparte esta noticia</p>
+                        <div class="mano"></div>
+                        <div class="iconsocial">
+                            <!-- AddToAny BEGIN -->
+                            <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+                                <!--a class="a2a_dd" href="https://www.addtoany.com/share"></a-->
+                                <a class="a2a_button_facebook"></a>
+                                <a class="a2a_button_twitter"></a>
+                            </div>
+                            <script>
+                                var a2a_config = a2a_config || {};
+                                a2a_config.linkurl = "https://libroreal.com/noticia/id";
+                                a2a_config.onclick = 1;
+                                a2a_config.locale = "es-VE";
+                            </script>
+                            <script async src="https://static.addtoany.com/menu/page.js"></script>
+                            <!-- AddToAny END -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <ng-template #loading>
+                <div class="service-error">
+                    <h3>Error loading of the blog detail. Please try again later.</h3>
+                </div>
+            </ng-template>
+
+
+
+
+        </div>
+
+
+        <!--- aside--->
+        <aside class="col-sm-3 uppp">
+            <div class="centradobord">
+                <h1>Artículos de interés</h1>
+            </div>
+            <app-blogpost-recent></app-blogpost-recent>
+        </aside>
+
+        <!---- //||--->
+
+
+    </div>
+</div>
