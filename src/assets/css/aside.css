@@ -6,11 +6,13 @@
 /*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
 aside {
-    background-color: #fff;
+    background-color: transparent;
     margin: 0;
     padding: 0;
     padding: 10px;
     margin-top: 0px;
+    border: 1px solid #fff;
+    box-shadow: 1px 1px 3px #000;
 }
 
 aside .notic {
@@ -92,7 +94,7 @@ aside .imgbackgr::after {
 aside .centradobord h1 {
     font-weight: 300 !important;
     font-size: 18px;
-    color: #222;
+    color: #fff;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -102,10 +104,22 @@ aside .centradobord h1 {
     width: 100%;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
 }
 
 aside .centradobord h1 {
-    border-bottom: 1px solid #333;
+    border-bottom: 1px solid #fff;
+}
+
+aside h1,
+aside h2,
+aside h3,
+aside h4,
+aside h5,
+aside h6,
+aside p,
+aside a {
+    color: #fff;
 }
 
 aside .centradobord h1::before,
@@ -113,16 +127,16 @@ aside .centradobord h1::after {
     content: "";
     flex: auto;
     height: .05em;
-    background: red;
+    background: #fff;
     display: block;
 }
 
 aside .centradobord h1::before {
     margin-right: .5em;
-    background: #000;
+    background: #fff;
 }
 
 aside .centradobord h1::after {
     margin-left: .5em;
-    background: #000;
+    background: #fff;
 }

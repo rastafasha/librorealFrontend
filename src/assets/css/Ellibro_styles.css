@@ -340,6 +340,24 @@ img::-moz-selection {
     }
 }
 
+@media(max-width:668px) {
+    .markbrow {
+        height: 86vh;
+    }
+}
+
+@media(min-width:669px) {
+    .markbrow {
+        height: 40vh;
+    }
+}
+
+@media(min-width:990px) {
+    .markbrow {
+        height: 80vh;
+    }
+}
+
 .librooo {
     background-image: url(../img/libroreal3.jpg);
     background-position: center;

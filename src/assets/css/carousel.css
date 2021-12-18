@@ -68,7 +68,7 @@
 }
 
 .carousel-control {
-    z-index: 2;
+    z-index: 99;
 }
 
 .carousel-control.right,
@@ -103,19 +103,17 @@
 
 .carousel h1 {
     font-size: 50px;
-    color: #fff !important;
     font-family: 'HelveticaNeueLTPro-Th';
 }
 
 .carousel h4 {
     font-size: 24px;
-    color: #c5c5c5 !important;
     font-family: 'HelveticaNeueLTPro-Md';
 }
 
 @media (max-width:680px) {
     .carousel .item img {
-        width: 50%;
+        width: 100%;
     }
     .carousel h1 {
         font-size: 20px;
@@ -125,5 +123,98 @@
     }
     .carousel-indicators {
         bottom: -30px;
+    }
+}
+
+.carousel-inner .item {
+    position: relative;
+    z-index: 99;
+}
+
+.textobanner {
+    position: relative;
+    z-index: 999;
+    left: 0;
+    top: -500px;
+}
+
+.textobanner h1 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    color: #353537;
+    font-size: 44px;
+    text-transform: uppercase;
+}
+
+.textobanner h2 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.textobanner h3 {
+    font-family: 'Jura', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+.textobanner h1,
+.textobanner h2,
+.textobanner h3,
+.textobanner a {
+    color: #353537;
+    margin: 0;
+    padding: 0;
+}
+
+.textobanner h3,
+.textobannerbajo h3 {
+    padding-bottom: 20px;
+}
+
+.textobannerbajo {
+    position: relative;
+    z-index: 999;
+    left: 100px;
+    top: -200px;
+}
+
+.textobannerbajo h1,
+.textobannerbajo h2,
+.textobannerbajo h3,
+.textobannerbajo a {
+    color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+.textobannerbajo h1 {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+@media (max-width:480px) {
+    .textobanner {
+        top: -150px;
+        padding: 30px;
+    }
+    .textobanner h1,
+    .textobanner h2,
+    .textobanner h3,
+    .textobanner a,
+    .textobannerbajo h1,
+    .textobannerbajo h2,
+    .textobannerbajo h3,
+    .textobannerbajo a {
+        font-size: medium;
+        text-align: center;
+    }
+    .textobannerbajo {
+        position: relative;
+        z-index: 999;
+        left: 10px;
+        top: -110px;
     }
 }

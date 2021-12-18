@@ -41,7 +41,7 @@
 .cuadro::after {
     content: '';
     position: absolute;
-    top: 170px;
+    top: 0px;
     left: 0;
     width: 100%;
     height: 350px;
@@ -84,6 +84,12 @@
     .cuadro .conten .btn {
         top: 280px;
         left: 10%;
+    }
+    .cuadro {
+        height: 160px;
+    }
+    .cuadro:nth-child(1) {
+        border-top: 3px solid #fff;
     }
 }
 

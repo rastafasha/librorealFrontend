@@ -20,6 +20,9 @@
     "Clases": "Clases",
     "Encuentre por aqui": "Encuentre por aqui",
 
+    "Título": "Título",
+    "Nombre del archivo": "Nombre del archivo",
+
     "Introducción": "Introducción",
     "dedicado.text": "Ha dedicado gran parte de su vida al estudio y la ejecución musical. Su interés por la recopilación de partituras para la publicación del Libro Real está influenciado en parte por su madre...",
     "sededica.text": "SE DEDICA A LA ENSEÑANZA MUSICAL,",
@@ -63,6 +66,13 @@
     "galeria8.text": "Mark con Enrique Hidalgo en Miami 2014.",
     "equipo": "Nuestro Equipo",
 
+    "equipo.textmodal.mariaeugnia": "Fue la primera asistente del Libro Real de la Música Tradicional Venezolana desde 2014. Mientras trabajaba para este proyecto, Maru estudió y se graduó de enfermera. Se encargó de buscar repertorio nuevo, investigar sobre autores, buscar el significado de palabras raras y transcribir música y letras, además de colaborar en un sinfín de tareas. Maru estudió violín en el Conservatorio Juan José Landaeta.",
+    "equipo.textmodal.vanesa": "Se integró al Libro Real en febrero de 2017, mientras se graduaba en Comercio Exterior en la Universidad Simón Bolívar. Inicialmente no tenía experiencia en música y se dedicó a revisar las letras de las canciones; luego aprendió a usar programas de edición musical y sus aportes en el diseño fueron importantísimos para optimizar la imagen del libro. Es extremadamente meticulosa y posee una habilidad envidiable para la escritura. Vane está aprendiendo a tocar el saxofón.",
+    "equipo.textmodal.franciest": "Trabaja en la producción y coordinación del Libro Real desde marzo del 2016, cuando se evidenciaron los montones de trámites y procesos paralelos que serían necesarios para poder publicarlo. Fran es internacionalista egresada de la UCV y productora gráfica en el diario El Nacional. Es extraordinariamente eficiente y ha llevado este proyecto de ser un amorfo montón de partituras en una computadora hasta su resultado final.",
+    "equipo.textmodal.eloimar": "Es comunicadora social de la UCAB, con habilidades para el desarrollo y coordinación de proyectos y la producción audiovisual y de eventos. Elo participa desde junio de 2017 como asistente de producción para la conclusión del Libro Real y fue la responsable de muchas de las diligencias necesarias para su publicación.",
+    "equipo.textmodal.bernal": " Empezó a trabajar como asistente del Libro Real en noviembre del 2016. Es incansable y ha trabajado en revisión de detalles de diseño de páginas, transcripción de piezas, investigación, contacto con compositores, selección de repertorio y una larga lista de tareas que ha cumplido con el mayor entusiasmo. Bernie toca el cuatro y canta. Es profesor de música egresado en 2009 de la Universidad Pedagógica Experimental Libertador (UPEL), Instituto Pedagógico de Caracas.",
+
+
     "quieres.titulo": "¿Quieres aprender sobre géneros venezolanos, teoría musical o instrumentos puntuales?",
     "quieres1.text": "No importa en qué país vivas. A través de Skype, Mark Brown puede enseñarte algunas de estas materias en clases privadas de 50 minutos.",
     "quieres2.text": "Como son sesiones 100% personalizadas, no hay un pensum rígido ni se requieren nociones previas: pueden construirlo juntos en función de tus inquietudes y necesidades, así como adaptarlo plenamente a tu nivel. Tú también eliges con qué frecuencia quieres recibir las lecciones, en un horario conveniente para ambos. Mark trabaja con niños a partir de 9 años de edad y adultos de todas las edades. Todas sus clases son individuales para que tú como alumno puedas aprovechar al máximo cada encuentro.",
@@ -95,6 +105,67 @@
     "coomingson": "Próximamente",
 
     "noticia.titulo": "noticia.titulo",
-    "noticia.intro": "noticia.introEng"
+    "noticia.intro": "noticia.intro",
+
+    "slider1.titulo1": "Presentando: El libro Real de",
+    "slider1.titulo2": "la Música Tradicional Venezolana.",
+    "slider1.titulo3": "Cientos de partituras para aprender a tocar.",
+
+    "slider2.titulo1": "Conozca a",
+    "slider2.titulo2": "Mark Brown",
+    "slider2.titulo3": "Músico, pedagogo y autor de El Libro Real de la Música Venezolana.",
+
+    "slider3.titulo1": "Clases de Música",
+    "slider3.titulo2": "Clases online personalizadas.",
+
+    "Dirección de Envío": "Dirección de Envío",
+    "Nombre*": "Nombre*",
+    "Apellido*": "Apellido*",
+    "Email*": "Correo Electrónico*",
+    "Teléfono local*": "Teléfono local*",
+    "Teléfono móvil*": "Teléfono móvil*",
+    "Dirección*": "Dirección*",
+    "Ciudad / Provincia*": "Ciudad / Provincia*",
+    "Estado*": "Estado*",
+    "País*": "País*",
+    "Seleccione": "Seleccione",
+    "Código postal*": "Código postal*",
+    "Acepto las": "Acepto las",
+    "Condiciones Generales": "Condiciones Generales",
+
+    "Ingrese sus Datos": "Ingrese sus Datos",
+    "Nombre": "Nombre",
+    "Apellido": "Apellido",
+    "Empresa (Opcional)": "Empresa (Opcional)",
+    "Email": "Email",
+    "Teléfono Móvil": "Teléfono Móvil",
+    "Teléfono Local": "Teléfono Local",
+    "País": "País",
+    "Ciudad": "Ciudad",
+    "Comentarios/ Preguntas": "Comentarios/ Preguntas",
+    "Seleccione la clase que desea aprender": "Seleccione la clase que desea aprender",
+    "Entendimiento y ejecución de la música venezolana clases": "Entendimiento y ejecución de la música venezolana clases",
+    "Uso profesional de la aplicación FINALE para editar música escrita": "Uso profesional de la aplicación FINALE para editar música escrita",
+    "Teoría musical para improvisación": "Teoría musical para improvisación",
+    "Contrabajo y bajo guitarra": "Contrabajo y bajo guitarra",
+    "Saxofón": "Saxofón",
+    "Cuatro para principiantes": "Cuatro para principiantes",
+    "Desea recibir información adicional y noticias?": "Desea recibir información adicional y noticias?",
+    "Si": "Si",
+    "No": "No",
+    "Publicaciones Recientes": "Publicaciones Recientes",
+
+    "Cuando comenzó el trabajo del Libro Real?": "Cuando comenzó el trabajo del Libro Real?",
+    "En enero del 2001. El autor empezó las primeras transcripciones cuando vivía en Nueva York.": "En enero del 2001. El autor empezó las primeras transcripciones cuando vivía en Nueva York.",
+
+    "Quien ha trabajado en el Libro Real?": "Quien ha trabajado en el Libro Real?",
+    "respuesta1": "Al comienzo, empezó como un proyecto mutuo con el contrabajista David Peña, quien hizo la transcripción básica de unas nueve canciones durante una visita a Nueva York en 2001. Luego siguió Mark Brown por su cuenta por 14 años hasta que contrata a María Eugenia Hamoni como asistente personal. Ella ayudó con letras, algunas transcripciones, búsqueda de datos, diseño de página, organización del repertorio, bases de datos, y muchos otros detalles. Durante 2016 contribuyeron esporádicamente con transcripciones básicas María Luisa Lamas, María Victoria Yánez y Heriberto Rojas. En Octubre del 2016, Mark intenta a contratar un equipo de trabajo fijo, pero el personal cambiaba frecuentemente. Entre los diversos asistentes se destacaron Bernardo Bernal, Vanessa Tapia y Javier Villamizar. Los ocho meses de trabajo intensivo para culminar los tomos 1 y 2 del Libro Real contaron con el trabajo de edición de María Eugenia Hamoni, Vanessa Tapia y Bernardo Bernal. En Producción trabajó Franciest Poller desde 2016 y Eloimar Bonilla en los meses de Mayo-Octubre de 2017. Jessica Alcalá ayudó de mil maneras en 2016-2017 para mantener el trabajo en marcha y está a cargo del canal de youtube, generando los videos y editando. Muchos compositores han ofrecido su tiempo y talento para mejorar mi este proyecto, entre ellos Cristobal Soto, Henry Martinez, Pablo Camacaro, Aquiles Baez, Omar García, Vianey Isolis Ramirez, Miguel y Raúl Delgado Estevez, entre otros. En investigación contamos con la ayuda de Carlos García Carbó. En todos los detalles de diseño, tanto del interior del libro como el exterior, Pedro Quintero.",
+    "Qué estilos están incluidos en el Libro Real de Venezuela y que criterio se usó para elegir?": "Qué estilos están incluidos en el Libro Real de Venezuela y que criterio se usó para elegir?",
+    "respuesta2": "En el Libro Real se incluyeron solamente estilos de música tradicionales venezolanos. El criterio que se usó fue de dar prioridad a los estilos mas auténticos de Venezuela y dejar para otro trabajo los que derivan de estilos extranjeros. Por lo tanto encontrarás joropos de varias regiones de Venezuela, merengues (caraqueño, oriental, y andino), danzas (zuliana, oriental), gaitas, bambucos, diversiones, pasajes, y valses. Aunque el vals no origina en Venezuela, los valses venezolanos tienen características que los hacen criollos y forman una parte importante del repertorio folklórico nacional.<br><br> La música de los llanos y en parte la de los andes, se puede decir que la compartimos con nuestros hermanos colombianos. De ninguna manera pretendemos exclusividad sobre estos géneros.",
+    "Que metodología se usó para la correcta transcripción de la música?": "Que metodología se usó para la correcta transcripción de la música?",
+    "respuesta3": "Mark Brown entrevistó a muchos compositores personalmente y les mostró sus transcripciones, tanto escritas como en audio, para verificar la autenticidad con los mismos autores. Si el compositor ya había fallecido, se trató de entrevistar a sus colegas músicos mas cercanos para revisar las transcripciones. En casos de música muy antigua, se buscó la grabación mas antigua y cercana al compositor y se usó para la transcripción musical.<br><br> En muchos casos fue difícil saber con exactitud cual grabación era la mejor, o quizá no había grabación de la época, o en algunos casos eran piezas que no habían sido grabadas nunca y solo había una partitura manuscrita, a veces del autor, a veces no. En algunos casos, las piezas solo estaban grabadas en cassettes ya muy deteriorados, de grabaciones caseras. En estos casos se usaron programas profesionales de audio para poder escuchar mejor los detalles y hacer una partitura lo mas fidedigna posible de la pieza.<br><br> Como la interpretación de algunos autores es muy libre y también cambiante de una presentación a otra, se tuvo que estudiar la pieza y escoger como podía ser escrita de la manera mas básica, suponiendo que cada intérprete lo va a interpretar a su manera. En estos casos, la partitura es una guía y se recomienda a los usuarios escuchar varias versiones de la pieza para ver como la quieren interpretar. Para esto hemos preparado un canal de YouTube con audios que recomendamos escuchar, con información sobre la pieza y fotos relevantes del compositor, intérprete y de la geografía de donde es la pieza. "
+
+
+
 
 }

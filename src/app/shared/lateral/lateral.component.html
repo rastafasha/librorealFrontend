@@ -1,1 +1,15 @@
-<p>lateral works!</p>
+<div class="lateral">
+
+    <ul>
+        <li class="shopping">
+            <a *ngIf="flag" style="cursor: pointer;" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')" class="botonidioma">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="shopping">
+            <a *ngIf="!flag" style="cursor: pointer;" [ngClass]="{'!active': activeLang == 'en'}" (click)="cambiarLenguaje('en')" class="botonidioma">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
