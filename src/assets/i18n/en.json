@@ -7,7 +7,7 @@
     "Inicio": "Home",
     "El Libro Real": "The Royal Book",
     "Clases de Música": "Music Classes",
-    "Letras": "Leters",
+    "Letras": "Lyrics",
     "Audio": "Audio",
     "Noticias": "News",
     "Contacto": "Contact",
@@ -20,6 +20,8 @@
     "ver más": "view more",
     "Clases": "Classes",
     "Encuentre por aqui": "Find here",
+    "Título": "Title",
+    "Nombre del archivo": "File name",
 
     "Introducción": "Introduction",
     "dedicado.text": "He has dedicated much of his life to the study and musical performance. His interest in collecting scores for the publication of the Royal Book is influenced in part by his mother ...",
@@ -63,6 +65,11 @@
     "galeria8.text": "Mark with Enrique Hidalgo in Miami 2014.",
 
     "equipo": "Our Team",
+    "equipo.textmodal.mariaeugnia": "She was the first assistant to the Royal Book of Venezuelan Traditional Music since 2014. While working for this project, Maru studied and graduated as a nurse. He was in charge of finding new repertoire, researching authors, finding the meaning of rare words and transcribing music and lyrics, as well as collaborating on endless tasks. Maru studied violin at the Juan José Landaeta Conservatory.",
+    "equipo.textmodal.vanesa": "He joined the Royal Book in February 2017, while graduating in Foreign Trade at the Simón Bolívar University. Initially he had no experience in music and was dedicated to reviewing the lyrics of the songs; Later, he learned to use music publishing programs and his contributions to the design were very important to optimize the image of the book. She is extremely meticulous and possesses enviable writing skills. Vane is learning to play the saxophone.",
+    "equipo.textmodal.franciest": "He has worked in the production and coordination of the Royal Book since March 2016, when the piles of procedures and parallel processes that would be necessary to publish it became evident. Fran is an internationalist graduated from the UCV and graphic producer in the newspaper El Nacional. He is extraordinarily efficient and has taken this project from being an amorphous pile of sheet music on a computer to its final result.",
+    "equipo.textmodal.eloimar": "She is a UCAB social communicator, with skills for the development and coordination of projects and audiovisual production and events. Elo participates since June 2017 as production assistant for the conclusion of the Book Real and was responsible for many of the necessary steps for its publication.",
+    "equipo.textmodal.bernal": " She began working as an assistant to the Royal Book in November 2016. She is tireless and has worked in reviewing details of page layout, transcription of pieces, research, contact with composers, selection of repertoire and a long list of tasks that she has fulfilled. the greatest enthusiasm. Bernie plays the four and sings. He is a music professor graduated in 2009 from the Universidad Pedagógica Experimental Libertador (UPEL), Instituto Pedagógico de Caracas",
 
     "quieres.titulo": "Do you want to learn about Venezuelan genres, musical theory or specific instruments?",
     "quieres1.text": "It doesn't matter in which country you live. Through Skype, Mark Brown can teach you some of these subjects in private 50-minute classes.",
@@ -96,8 +103,72 @@
     "notfount.text": "la página que estas bucandos pude estar removida, cambiada de nombre, o temporalmente no disponible.",
     "coomingson": "Próximamente",
 
-    "noticia.titulo": "noticia.tituloEng",
-    "noticia.intro": "noticia.introEng"
+
+    "slider1.titulo1": "We introduce you: El libro Real of",
+    "slider1.titulo2": "traditional Venezuelan music.",
+    "slider1.titulo3": "hundreds of sheet music to learn and play.",
+
+    "slider2.titulo1": "Meet",
+    "slider2.titulo2": "Mark Brown",
+    "slider2.titulo3": "Musician, pedagogue and author of the royal book of Venezuelan music.",
+
+    "slider3.titulo1": "Music Classes",
+    "slider3.titulo2": "learning online personalized.",
+
+    "noticia.tituloEng": "noticia.tituloEng",
+    "noticia.introEng": "noticia.introEng",
+
+    "cambio": "Change",
+
+    "Dirección de Envío": "Shipping Address",
+    "Nombre*": "First Name*",
+    "Apellido*": "Last Name*",
+    "Email*": "E-mail*",
+    "Teléfono local*": "home Phone*",
+    "Teléfono móvil*": "Mobile Phone*",
+    "Dirección*": "Address*",
+    "Ciudad / Provincia*": "City / province*",
+    "Estado*": "State*",
+    "País*": "Country*",
+    "Seleccione": "Select",
+    "Código postal*": "ZIP Code*",
+    "Acepto las": "I Acept",
+    "Condiciones Generales": "General Conditions",
+
+
+    "Ingrese sus Datos": "Insert your data",
+    "Nombre": "First Name",
+    "Apellido": "Last name",
+    "Empresa (Opcional)": "Compani (Optional)",
+    "Email": "E-mail",
+    "Teléfono Móvil": "Phone Mobile",
+    "Teléfono Local": "Phone Number",
+    "País": "Country",
+    "Ciudad": "City",
+    "Comentarios/ Preguntas": "Comments/ Asks",
+    "Seleccione la clase que desea aprender": "Select the class to learn",
+    "Entendimiento y ejecución de la música venezolana clases": "Understanding and execution of Venezuelan music classes",
+    "Uso profesional de la aplicación FINALE para editar música escrita": "Professional use of the FINALE application to edit written music",
+    "Teoría musical para improvisación": "Music theory of improvisation",
+    "Contrabajo y bajo guitarra": "Double bass, bass guitar",
+    "Saxofón": "Saxophone",
+    "Cuatro para principiantes": "Four for beginners",
+    "Desea recibir información adicional y noticias?": "Do you want receive additional information and news?",
+    "Si": "Yes",
+    "No": "No",
+    "Publicaciones Recientes": "Recent Posts",
+
+    "Cuando comenzó el trabajo del Libro Real?": "When did the work on the Royal Book begin?",
+    "En enero del 2001. El autor empezó las primeras transcripciones cuando vivía en Nueva York.": "In January 2001. The author began the first transcriptions while living in New York.",
+
+    "Quien ha trabajado en el Libro Real?": "Who has worked on the Libro Real?",
+    "respuesta1": "At first, it started as a mutual project with double bass player David Peña, who did the basic transcription of some nine songs during a visit to New York in 2001. Then Mark Brown followed on his own for 14 years until he hired María Eugenia Hamoni as personal assistant. She helped with lyrics, some transcriptions, data search, page layout, repertoire organization, databases, and many other details. During 2016 María Luisa Lamas, María Victoria Yánez and Heriberto Rojas contributed sporadically with basic transcriptions. In October 2016, Mark tried to hire a permanent team, but the staff changed frequently. Among the various attendees, Bernardo Bernal, Vanessa Tapia and Javier Villamizar stood out. The eight months of intensive work to complete volumes 1 and 2 of the Royal Book included the editing work of María Eugenia Hamoni, Vanessa Tapia and Bernardo Bernal. In Production, Franciest Poller worked since 2016 and Eloimar Bonilla in the months of May-October 2017. Jessica Alcalá helped in a thousand ways in 2016-2017 to keep the work going and is in charge of the YouTube channel, generating the videos and editing . Many composers have offered their time and talent to improve this project, among them Cristobal Soto, Henry Martinez, Pablo Camacaro, Aquiles Baez, Omar García, Vianey Isolis Ramirez, Miguel and Raúl Delgado Estevez, among others. In research we have the help of Carlos García Carbó. In all the design details, both inside and outside the book, Pedro Quintero.",
+    "Qué estilos están incluidos en el Libro Real de Venezuela y que criterio se usó para elegir?": "What styles are included in the Royal Book of Venezuela and what criteria was used to choose?",
+    "respuesta2": "Only traditional Venezuelan styles of music were included in the Royal Book. The criterion used was to give priority to the most authentic styles of Venezuela and to leave those that derive from foreign styles for another work. Therefore you will find joropos from various regions of Venezuela, merengues (Caracas, oriental, and Andean), dances (Zuliana, oriental), bagpipes, bambucos, diversions, passages, and waltzes. Although the waltz does not originate in Venezuela, Venezuelan waltzes have characteristics that make them creoles and form an important part of the national folk repertoire. <br> <br> The music of the plains and in part that of the Andes, it can be said that We share it with our Colombian brothers. In no way do we claim exclusivity over these genres.",
+    "Que metodología se usó para la correcta transcripción de la música?": "What methodology was used for the correct transcription of the music?",
+    "respuesta3": "Mark Brown interviewed many composers personally and showed them their transcripts, both written and audio, to verify authenticity with the same authors. If the composer had already passed away, an attempt was made to interview his closest fellow musicians to review the transcripts. In cases of very old music, the oldest recording closest to the composer was sought and it was used for the musical transcription. <br> <br> In many cases it was difficult to know exactly which recording was the best, or perhaps there was no recording of the time, or in some cases they were pieces that had never been recorded and there was only a handwritten score, sometimes by the author, sometimes not. In some cases, the pieces were only recorded on cassettes that were already very deteriorated, from home recordings. In these cases, professional audio programs were used to better hear the details and make the most accurate possible score of the piece. <br> <br> As the interpretation of some authors is very free and also changing from one presentation to another , it was necessary to study the piece and choose how it could be written in the most basic way, assuming that each interpreter is going to interpret it in their own way. In these cases, the score is a guide and users are encouraged to listen to various versions of the piece to see how they want to interpret it. For this we have prepared a YouTube channel with audios that we recommend listening to, with information about the piece and relevant photos of the composer, performer and the geography where the piece is from."
+
+
 
 
 

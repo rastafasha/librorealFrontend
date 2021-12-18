@@ -1,3 +1,5 @@
+<app-lateral></app-lateral>
+
 <app-slider></app-slider>
 <!-- mark brown -->
 
@@ -27,13 +29,19 @@
         <h1> {{ 'Clases de Música' | translate }}</h1>
         <h3>{{ 'ensa.text' | translate }}</h3>
         <br><br>
-        <a routerLink="/clases-de-musica"><button class="botoncomprar uppp col-xs-12 col-sm-4 col-sm-push-4">{{ 'ver más' | translate }}</button></a>
+        <a routerLink="/music-clases"><button class="botoncomprar uppp col-xs-12 col-sm-4 col-sm-push-4">{{ 'ver más' | translate }}</button></a>
 
     </div>
 </section>
 
 <!--noticias-->
-<app-blog-home></app-blog-home>
+<app-news></app-news>
+
+
+
+
+
+<!---mapa musical--->
 
 
 <!---mapa musical--->
@@ -56,7 +64,7 @@
                 <h2 class="col-xs-12 col-sm-6 col-md-8">{{ 'Necesitas.text' | translate }}</h2>
                 <div class="clear"></div>
                 <p>{{ 'Puedes.text' | translate }} </p>
-                <a routerLink="/letras"><button class="botoncomprar col-xs-10 col-sm-4 ">{{ 'ver más' | translate }}</button></a>
+                <a routerLink="/lyrics"><button class="botoncomprar col-xs-10 col-sm-4 ">{{ 'ver más' | translate }}</button></a>
             </div>
         </div>
     </div>

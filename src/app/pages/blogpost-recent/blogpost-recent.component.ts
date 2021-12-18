@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+
 import { NoticiaService } from '../../services/noticia.service';
 import { Noticia } from '../../models/noticia';
 
@@ -9,13 +11,15 @@ import { Noticia } from '../../models/noticia';
 })
 export class BlogpostRecentComponent implements OnInit {
 
+
+
+  constructor(private noticiaService: NoticiaService, private route: ActivatedRoute) { }
+
   noticias: Noticia;
   error: {};
 
-  constructor(private noticiaService: NoticiaService) { }
-
   ngOnInit() {
-    this.noticiaService.getRecentNoticias().subscribe(
+    this.noticiaService.getNoticias().subscribe(
       (data: Noticia) => this.noticias = data,
       error => this.error = error
     );

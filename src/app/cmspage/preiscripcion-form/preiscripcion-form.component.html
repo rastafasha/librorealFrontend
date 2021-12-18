@@ -4,89 +4,79 @@
 
 
     <div class="PedidoContainer">
-        <h1>- Ingrese sus Datos -</h1>
+        <h1 class="text-center">- {{'Ingrese sus Datos' | translate}} -</h1>
         <form name="MiCompra" action="mailpreisncrp.php" method="post">
-            <div style="margin-bottom:20px;" class="col-xs-12 col-sm-8 col-sm-push-2">
+            <div style="margin-bottom:20px;" class="col-xs-12 col-sm-8">
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
-                    <input type="text" name="Nombre" maxlength="114" size="50" class="cuadroInput" placeholder="Nombre">
+                    <input type="text" name="Nombre" maxlength="114" size="50" class="cuadroInput" placeholder="{{'Nombre' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
-                    <input type="text" name="apellido" maxlength="114" size="50" class="cuadroInput" placeholder="Apellido">
+                    <input type="text" name="apellido" maxlength="114" size="50" class="cuadroInput" placeholder="{{'Apellido' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
-                    <input type="text" name="Company" maxlength="114" size="50" class="cuadroInput" placeholder="Empresa( opcional)">
+                    <input type="text" name="Company" maxlength="114" size="50" class="cuadroInput" placeholder="{{'Empresa (Opcional)' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
-                    <input type="text" name="Email" maxlength="114" size="50" class="cuadroInput" placeholder="Email">
+                    <input type="text" name="Email" maxlength="114" size="50" class="cuadroInput" placeholder="{{'Email' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
-                    <input type="text" name="CellPhone" maxlength="114" size="50" class="cuadroInput" placeholder="Telefono Movil">
+                    <input type="text" name="CellPhone" maxlength="114" size="50" class="cuadroInput" placeholder="{{'Teléfono Móvil' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-4">
-                    <input type="text" name="phoneOfc" maxlength="114" size="50" class="cuadroInput" placeholder="Telefono local">
+                    <input type="text" name="phoneOfc" maxlength="114" size="50" class="cuadroInput" placeholder="{{'Teléfono Local' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-6">
-                    <input type="text" name="Pais" class="cuadroInput" placeholder="Pais">
+                    <input type="text" name="Pais" class="cuadroInput" placeholder="{{'País' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-6 col-md-6">
-                    <input type="text" name="Ciudad" class="cuadroInput" placeholder="Ciudad">
+                    <input type="text" name="Ciudad" class="cuadroInput" placeholder="{{'Ciudad' | translate}}">
                 </div>
                 <div class="camp camp2 col-xs-12 col-sm-12 col-md-12">
-                    <textarea name="coments" class="cuadroInput" style="height: 70px;" placeholder="Comentarios y/o Preguntas"></textarea>
+                    <textarea name="coments" class="cuadroInput" style="height: 70px;" placeholder="{{'Comentarios/ Preguntas' | translate}}"></textarea>
                 </div>
-                <div class="clear"></div>
-                <br>
-                <hr>
-                <br>
-                <div class="camp col-xs-12 ">
-                    Desea recibir información adicional y noticias?<br>
-                    <label class="radio-inline">
-                                  <input type="radio" name="deseo" id="inlineRadio1" value="si"> Si
-                                </label>
-                    <label class="radio-inline">
-                                  <input type="radio" name="deseo" id="inlineRadio2" value="no"> No
-                                </label>
-
-                </div>
-
             </div>
 
-
-            <div class="clear"></div>
-            <br>
-            <div class="centradobord">
-                <h1>Seleccione la clase que desea aprender</h1>
-            </div>
-
-
-            <div class="col-xs-12 col-sm-8 col-sm-push-2">
-                <div class="CursosList  col-xs-12 col-sm-6 col-md-6">
+            <div class="col-xs-12 col-sm-4">
+                <div class="centradobord">
+                    <h3> {{'Seleccione la clase que desea aprender' | translate}}</h3>
+                </div>
+                <div class="CursosList ">
                     <div>
-                        <input type="checkbox" name="cursodeseado" value="Entendimiento y ejecución de la música venezolana clases" style="margin-right:10px"> Entendimiento y ejecución de la música venezolana clases
-                    </div><br>
+                        <input type="checkbox" name="cursodeseado" value="Entendimiento y ejecución de la música venezolana clases" style="margin-right:10px"> {{'Entendimiento y ejecución de la música venezolana clases' | translate}}
+                    </div>
                     <div>
-                        <input type="checkbox" name="cursodeseado" value="Uso profesional de la aplicación FINALE para editar música escrita" style="margin-right:10px"> Uso profesional de la aplicación FINALE para editar música escrita
-                    </div><br>
+                        <input type="checkbox" name="cursodeseado" value="Uso profesional de la aplicación FINALE para editar música escrita" style="margin-right:10px">{{'Uso profesional de la aplicación FINALE para editar música escrita' | translate}}
+                    </div>
                     <div>
-                        <input type="checkbox" name="cursodeseado" value="Teoría musical para improvisación" style="margin-right:10px"> Teoría musical para improvisación
+                        <input type="checkbox" name="cursodeseado" value="Teoría musical para improvisación" style="margin-right:10px"> {{'Teoría musical para improvisación' | translate}}
                     </div>
 
 
 
                 </div>
 
-                <div class="CursosList col-xs-12 col-sm-6 col-md-6">
+                <div class="CursosList">
                     <div>
-                        <input type="checkbox" name="cursodeseado" value="Contrabajo y bajo guitarra" style="margin-right:10px"> Contrabajo y bajo guitarra
-                    </div><br>
+                        <input type="checkbox" name="cursodeseado" value="Contrabajo y bajo guitarra" style="margin-right:10px"> {{'Contrabajo y bajo guitarra' | translate}}
+                    </div>
                     <div>
-                        <input type="checkbox" name="cursodeseado" value="Saxofón" style="margin-right:10px"> Saxofón
-                    </div><br>
+                        <input type="checkbox" name="cursodeseado" value="Saxofón" style="margin-right:10px"> {{'Saxofón' | translate}}
+                    </div>
                     <div>
-                        <input type="checkbox" name="cursodeseado" value="Piano" style="margin-right:10px"> Cuatro para principiantes
+                        <input type="checkbox" name="cursodeseado" value="Piano" style="margin-right:10px"> {{'Cuatro para principiantes' | translate}}
                     </div>
 
                 </div>
+            </div>
+            <div class="camp col-xs-12 text-center">
+                {{'Desea recibir información adicional y noticias?' | translate}}<br>
+                <label class="radio-inline">
+                            <input type="radio" name="deseo" id="inlineRadio1" value="si"> {{'Si' | translate}}
+                          </label>
+                <label class="radio-inline">
+                            <input type="radio" name="deseo" id="inlineRadio2" value="no"> {{'No' | translate}}
+                          </label>
+
             </div>
             <div class="clear"></div>
 

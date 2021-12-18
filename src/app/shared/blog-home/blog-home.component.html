@@ -1,16 +1,16 @@
 <div class="container no-padding">
     <div class=" " *ngFor="let noticia of noticias ">
-        <a [routerLink]="['/noticia', noticia.id]" style="color: #fff">
+        <a [routerLink]="['/news', noticia.id]" style="color: #fff">
             <div class="col-xs-12 col-sm-6 col-md-6  cuadro " [ngStyle]="{'background-image': 'url(' + noticia.image + ')'}">
                 <div class=" conten">
-                    <h4>{{noticia.titulo}}</h4>
-                    <p>{{noticia.intro}} </p>
+                    <h4>{{noticia.tituloEng}}</h4>
+                    <p>{{noticia.introEng}} </p>
 
                 </div>
             </div>
         </a>
     </div>
     <div class="clear"></div><br><br>
-    <a routerLink="/noticias"><button class="botoncomprar uppp col-xs-12 col-sm-4 col-sm-push-4">{{ 'ver más' | translate }}</button></a>
+    <a routerLink="/news"><button class="botoncomprar uppp col-xs-12 col-sm-4 col-sm-push-4">{{ 'ver más' | translate }}</button></a>
 
 </div>

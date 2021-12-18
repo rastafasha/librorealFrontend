@@ -96,7 +96,7 @@
 
 @media (max-width:480px) {
     .topevacio {
-        height: 10vh;
+        height: 13vh;
     }
 }
 
@@ -131,7 +131,7 @@
         padding-top: 80px;
     }
     .topevacio {
-        height: 35vh;
+        height: 15vh;
     }
 }
 

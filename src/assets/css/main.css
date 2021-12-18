@@ -5,7 +5,7 @@
 
 /*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
 
-@import url('https://fonts.googleapis.com/css?family=Jura');
+@import url('https://fonts.googleapis.com/css?family=Jura:400,700,900');
 @import url('https://fonts.googleapis.com/css?family=Lato');
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 @import url("normalize.css");
@@ -32,10 +32,107 @@
 @import url("Ellibro_styles.css");
 @import url("carousel.css");
 @import url("cuadrostexto.css");
+@import url("carouselnewshome.css");
+@import url("personal.css");
 .clear {
     clear: both;
     visibility: hidden;
     margin: 0px;
     padding: 0px;
     height: 0;
+}
+
+.visible {
+    display: block;
+}
+
+.novisible {
+    display: none;
+}
+
+.lateral {
+    position: fixed;
+    z-index: 99999;
+    float: right;
+    top: 60px;
+    right: 4%;
+    width: 60px;
+    height: 60px;
+    padding: 20px;
+    background-color: transparent;
+    border-radius: 4px;
+}
+
+.lateral ul {
+    text-decoration: none;
+    list-style-type: none;
+    float: inherit;
+}
+
+.lateral ul li a {
+    color: #292929;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.lateral ul li a img {
+    width: 40px;
+    display: inherit;
+    border-radius: 4px;
+}
+
+.languaje {
+    background-color: #f89e1c;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 20px;
+    display: block;
+    margin: 0;
+    padding-bottom: 0;
+    position: absolute;
+    right: 23.1%;
+}
+
+@media(max-width:480px) {
+    .lateral {
+        top: calc(2.1%);
+        right: 2px;
+        padding: 0;
+        display: flex;
+        flex-flow: row-reverse;
+    }
+    .languaje {
+        background-color: #f89e1c;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+    .lateral ul li a {
+        color: #fff;
+    }
+}
+
+@media(min-width:768px) {
+    .lateral {}
+    .languaje {
+        background-color: transparent;
+    }
+}
+
+@media(min-width:1400px) {
+    .lateral {
+        right: calc(8.8%);
+    }
+}
+
+@media(min-width:1600px) {
+    .lateral {
+        right: calc(14.1%);
+    }
+}
+
+@media(min-width:1900px) {
+    .lateral {
+        right: calc(19.1%);
+    }
 }

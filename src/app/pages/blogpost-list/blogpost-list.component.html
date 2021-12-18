@@ -1,37 +1,91 @@
+<div class="topevacio"></div>
 <div class="clear"></div>
 <section class="topes" id="directorio">
     <div class="container">
         <h1 class="up">{{title}}</h1>
     </div>
 </section>
-<section class="blog-list">
-    <div class="container">
-        <div class="clear"></div>
-        <!--Including the pagination control.-->
-        <div class="row mt-4 mb-4">
-            <div class="text-center">
-                <pagination-controls (pageChange)="p = $event" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+
+<div class="lateral">
+
+    <ul>
+        <li class="shopping">
+            <a *ngIf="flag" style="cursor: pointer;" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')" class="botonidioma">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="shopping">
+            <a *ngIf="!flag" style="cursor: pointer;" [ngClass]="{'!active': activeLang == 'en'}" (click)="cambiarLenguaje('en')" class="botonidioma">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
+
+
+<div *ngIf="flag">
+    <section class="blog-list">
+        <div class="container">
+            <div class="clear"></div>
+            <!--Including the pagination control.-->
+            <div class="row mt-4 mb-4">
+                <div class="text-center">
+                    <pagination-controls (pageChange)="p = $event" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6  fr-view" style="margin-bottom: 20px;" *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
-                <!--div class="col-sm-6 col-md-4 fr-view" *ngFor=" let directorio of directorios"-->
-                <div class=" card cardblog">
-                    <div class="card-body ">
-                        <div class="row">
-                            <div class="col-xs-12 col-sm-5 imgnott nopadd" [ngStyle]="{'background-image': 'url(' + noticia.image + ')'}"></div>
-                            <div class="col-xs-12 col-sm-7" style="margin-top: 10px;">
-                                <a [routerLink]="['/noticia', noticia.id]">
-                                    <h5>{{noticia.titulo}}</h5>
-                                </a>
-                                <p>{{noticia.intro}}</p>
+            <div class="row">
+                <div class="col-sm-6  fr-view" style="margin-bottom: 20px;" *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
+                    <!--div class="col-sm-6 col-md-4 fr-view" *ngFor=" let directorio of directorios"-->
+                    <div class=" card cardblog">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 imgnott nopadd" [ngStyle]="{'background-image': 'url(' + noticia.image + ')'}"></div>
+                                <div class="col-xs-12 col-sm-7" style="margin-top: 10px;">
+                                    <a [routerLink]="['/news', noticia.id]">
+                                        <h5>{{noticia.tituloEng}}</h5>
+                                    </a>
+                                    <p>{{noticia.introEng}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+
             </div>
 
         </div>
+    </section>
+</div>
+<div *ngIf="!flag">
+    <section class="blog-list">
+        <div class="container">
+            <div class="clear"></div>
+            <!--Including the pagination control.-->
+            <div class="row mt-4 mb-4">
+                <div class="text-center">
+                    <pagination-controls (pageChange)="p = $event" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6  fr-view" style="margin-bottom: 20px;" *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
+                    <!--div class="col-sm-6 col-md-4 fr-view" *ngFor=" let directorio of directorios"-->
+                    <div class=" card cardblog">
+                        <div class="card-body ">
+                            <div class="row">
+                                <div class="col-xs-12 col-sm-5 imgnott nopadd" [ngStyle]="{'background-image': 'url(' + noticia.image + ')'}"></div>
+                                <div class="col-xs-12 col-sm-7" style="margin-top: 10px;">
+                                    <a [routerLink]="['/news', noticia.id]">
+                                        <h5>{{noticia.titulo}}</h5>
+                                    </a>
+                                    <p>{{noticia.intro}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-    </div>
-</section>
+            </div>
+
+        </div>
+    </section>
+</div>

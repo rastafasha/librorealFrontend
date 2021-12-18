@@ -1,41 +1,36 @@
 <div class="topevacio"></div>
+<div class="clear"></div>
 
-<div class="container">
+<div class="lateral">
 
-    <div class="row">
-        <!--Español-->
-        <div *ngIf="flag==true">
-            <div class="col-xs-12 col-sm-4 fr-view" *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
+    <ul>
+        <li class="languaje">
+            <a *ngIf="flag" style="cursor: pointer;" [ngClass]="{'active': activeLang == 'es'}" (click)="cambiarLenguaje('es')" class="botonidioma">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li class="languaje">
+            <a *ngIf="!flag" style="cursor: pointer;" [ngClass]="{'!active': activeLang == 'en'}" (click)="cambiarLenguaje('en')" class="botonidioma">
+                <i class="fa fa-language" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+</div>
 
-                <div class="card cardnoticia">
-                    <div class="card-body">
-                        <img src="{{noticia.image}}" class="img-responsive" alt="{{noticia.titulo}}">
-                        <div class="contenido">
-                            <p><small>{{noticia.created_at | date}}</small></p>
-                            <h3 class="col-xs-12">{{noticia.titulo }}</h3>
-                            <p class="hidden-xs">{{noticia.intro}}</p>
-                            <a [routerLink]="['/noticia', noticia.id]"><button class="botoncomprar col-xs-12 col-sm-8 col-sm-push-2">Leer más</button></a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+
+<div class="container " *ngIf="flag && activeLang == 'en'">
 
     <div class="row">
-        <!--English-->
-        <div *ngIf="flag==false">
-            <div class="col-xs-12 col-sm-4 fr-view" *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
+        <div class="col-xs-12 col-sm-4 " *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
 
-                <div class="card cardnoticia">
-                    <div class="card-body">
-                        <img src="{{noticia.image}}" class="img-responsive" alt="{{noticia.titulo}}">
-                        <div class="contenido">
-                            <p><small>{{noticia.created_at | date}}</small></p>
-                            <h3 class="col-xs-12">{{noticia.tituloEng}}</h3>
-                            <p class="hidden-xs">{{noticia.introEng}}</p>
-                            <a [routerLink]="['/noticia', noticia.id]"><button class="botoncomprar col-xs-12 col-sm-8 col-sm-push-2">Read More</button></a>
-                        </div>
+            <div class="card cardnoticia">
+                <div class="card-body">
+                    <img src="{{noticia.image}}" class="img-responsive" alt="{{noticia.titulo}}">
+                    <div class="contenido">
+                        <p><small>{{noticia.created_at | date}}</small></p>
+                        <h3 class="col-xs-12">{{noticia.tituloEng}}</h3>
+                        <p class="hidden-xs">{{noticia.introEng}}</p>
+                        <a [routerLink]="['/news', noticia.id]"><button class="botoncomprar col-xs-12 col-sm-8 col-sm-push-2">Read More</button></a>
                     </div>
                 </div>
             </div>
@@ -45,10 +40,42 @@
 
     <div class="clear"></div> <br>
     <!--Including the pagination control.-->
-    <div class="container mt-4 mb-4">
+    <div class="row mt-4 mb-4">
         <div class="text-center">
             <pagination-controls (pageChange)="p = $event" autoHide="true" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
         </div>
     </div>
+
+
+</div>
+
+<div class="container " *ngIf="flag && activeLang == 'es'">
+
+    <div class="row">
+        <div class="col-xs-12 col-sm-4 " *ngFor="let noticia of noticias | keys | paginate: { itemsPerPage: count, currentPage: p }">
+
+            <div class="card cardnoticia">
+                <div class="card-body">
+                    <img src="{{noticia.image}}" class="img-responsive" alt="{{noticia.titulo}}">
+                    <div class="contenido">
+                        <p><small>{{noticia.created_at | date}}</small></p>
+                        <h3 class="col-xs-12">{{noticia.titulo}}</h3>
+                        <p class="hidden-xs">{{noticia.intro}}</p>
+                        <a [routerLink]="['/news', noticia.id]"><button class="botoncomprar col-xs-12 col-sm-8 col-sm-push-2">Leer mas</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="clear"></div> <br>
+    <!--Including the pagination control.-->
+    <div class="row mt-4 mb-4">
+        <div class="text-center">
+            <pagination-controls (pageChange)="p = $event" autoHide="true" responsive="true" previousLabel="Anterior" nextLabel="Siguiente"></pagination-controls>
+        </div>
+    </div>
+
 
 </div>

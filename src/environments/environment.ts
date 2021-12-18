@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  // baseUrl: 'https://malcolmcordova.com/libroreal/server/'
-  baseUrl: 'http://localhost:8888/proyectos/servidoresBackend/libroreal/server/'
+  baseUrl: 'https://libroreal.com/server/'
+  // baseUrl: 'http://localhost:8888/proyectos/CI3Server/libroreal/server/'
 };
 
 /*

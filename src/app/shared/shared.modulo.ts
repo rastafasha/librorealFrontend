@@ -41,7 +41,7 @@ import { TranslateModule } from '@ngx-translate/core';
         BlogHomeComponent,
         ModalComponent,
         NewsletterComponent,
-        LateralComponent
+        LateralComponent,
 
 
     ],

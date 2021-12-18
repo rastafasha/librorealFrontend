@@ -1,0 +1,104 @@
+@media(max-width:668px) {
+    .personal {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+    }
+    .personal .item {
+        overflow: hidden;
+        height: 170px;
+        margin-top: 2px !important;
+        display: flex;
+    }
+    .personal .info {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: end;
+        color: #000;
+        padding: 10px;
+    }
+    .personal .info-derecha {
+        display: flex;
+        position: absolute;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 100%;
+    }
+    .personal img {
+        display: flex;
+        width: 100vw;
+        margin-top: -11px;
+        margin-left: 0;
+    }
+}
+
+@media(min-width:669px) {
+    .personal {
+        display: grid;
+        grid-auto-rows: auto;
+        grid-gap: 1rem;
+        grid-auto-flow: row dense;
+        position: relative;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .personal .item {
+        overflow: hidden;
+        height: auto;
+        margin-top: 2px !important;
+    }
+    .personal .info {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: end;
+        color: #fff;
+    }
+    .personal .info-derecha {
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+    }
+    .personal img {
+        width: 100%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+}
+
+@media(min-width:990px) {
+    .personal {
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+    }
+    .personal .item {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        overflow: auto;
+        height: auto;
+        margin-top: 0px !important;
+    }
+    .personal img {
+        display: flex;
+        width: 110%;
+        margin-top: 0px;
+        margin-left: 0px;
+    }
+    .personal .info {
+        position: relative;
+        display: flex;
+        color: #fff;
+        padding: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-top: 10px;
+        padding-left: 10px;
+    }
+    .personal .info-derecha {
+        align-items: flex-start;
+    }
+}
